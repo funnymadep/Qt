@@ -1,2 +1,0 @@
-# Hashes of file build rules.
-d2490ab87aafe7bb582927c7dac2994a CMakeFiles/hit_menu_autogen
