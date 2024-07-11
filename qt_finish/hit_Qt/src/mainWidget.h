@@ -31,5 +31,6 @@ private:
 
     lidarWidget *lidar = nullptr;
     cameraWidget *camera = nullptr;
+    
 };
 #endif // WIDGET_H
