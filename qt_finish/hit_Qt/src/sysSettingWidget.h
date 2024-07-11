@@ -1,6 +1,8 @@
 #ifndef SYS_SETTING_WIDGET_H
 #define SYS_SETTING_WIDGET_H
 
+#include "global.h"
+
 class sysSettingWidget : public QWidget
 {
     Q_OBJECT

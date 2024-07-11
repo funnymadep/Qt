@@ -1,5 +1,4 @@
 #include "cameraWidget.h"
-#include "global.h"
 
 cameraWidget::cameraWidget(QWidget *parent)
 {
@@ -25,7 +24,7 @@ cameraWidget::cameraWidget(QWidget *parent)
     graphicsView->setFixedHeight(400);
 
     // 加载图像
-    QImageReader reader("./images/3.jpg");  // 示例图片路径
+    QImageReader reader("./image/3.jpg");  // 示例图片路径
     QImage image = reader.read();
     if (image.isNull()) {
         QMessageBox::critical(this, "错误", "无法加载图像");
