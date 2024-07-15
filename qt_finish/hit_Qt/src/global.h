@@ -23,5 +23,14 @@
 #include <QResizeEvent>
 #include <QImageReader>
 #include <QFileDialog>
+#include <QCheckBox>
+#include <QButtonGroup>
+#include <QTableWidget>
+#include <QTableWidgetItem>
+#include <QGraphicsRectItem>
+#include <QGraphicsSceneMouseEvent>
+#include <QCursor>
+#include <QGraphicsVideoItem>
+#include <QMediaPlayer>
 
 #endif

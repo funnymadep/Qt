@@ -2,17 +2,7 @@
 #define CAMERA_WIDGET_H
 
 #include "global.h"
-
-class DraggableRectItem : public QGraphicsRectItem
-{
-public:
-    DraggableRectItem(QGraphicsItem *parent = nullptr) : QGraphicsRectItem(parent) {
-        setFlag(QGraphicsItem::ItemIsMovable);
-        setFlag(QGraphicsItem::ItemIsSelectable);
-        setFlag(QGraphicsItem::ItemSendsGeometryChanges);
-        setFlag(QGraphicsItem::ItemIsFocusable);
-    }
-};
+#include "resizableitem.h"
 
 class cameraWidget : public QWidget
 {
@@ -24,14 +14,21 @@ public:
 
 private slots:
    void saveConfiguration();
+   void addRedRect();
+   void deleteSelectedRect();
+   void videoPlay();
+   void videoStop();
 
 private:
     QLabel *cameraSignalLabel;
     QLabel *obstacleLabel;
-    QGraphicsScene *scene;
+    QGraphicsView *mView;
+    QGraphicsScene *mScene;
     QGraphicsPixmapItem *pixmapItem;
-    DraggableRectItem *draggableRect;
-
+    ResizableRectItem *selectedRect;
+    QGraphicsVideoItem *mVideoItem;
+    QMediaPlayer *mMediaPlayer;
+    QLineEdit *mRtspLineEdit;
 };
 
 

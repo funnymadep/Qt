@@ -38,7 +38,6 @@ void mainWidget::createLogo()
 void mainWidget::createMenu(QHBoxLayout *h)
 {
         QTreeWidget *mTreeWidget = new QTreeWidget();
-        // 将 treeWidget 添加到布局中
         h->addWidget(mTreeWidget);
         // 隐藏表头
         mTreeWidget->setHeaderHidden(true);
@@ -71,11 +70,10 @@ void mainWidget::createMenu(QHBoxLayout *h)
 void mainWidget::handleItemClicked(QTreeWidgetItem *item) {
     QString itemName = item->text(0);  // 获取被点击的 QTreeWidgetItem 的第一个列的文本
 
-    // 检查是否是“电气房左侧激光”被点击
-    if (itemName == "电气房左侧激光")
+    if (itemName.contains(tr("激光")))
     {
-        QMessageBox::information(this, "Item Clicked", "电气房左侧激光 被点击了");
-            // 在这里添加具体的处理逻辑
+        // QMessageBox::information(this, "Item Clicked", "电气房左侧激光 被点击了");
+            
         if (lidar == nullptr)
         {
             lidar = new lidarWidget();
@@ -84,7 +82,7 @@ void mainWidget::handleItemClicked(QTreeWidgetItem *item) {
         mStackedWgt->setCurrentWidget(lidar);
         
     }
-    else if(itemName == "电气房左侧近景相机")
+    else if(itemName.contains(tr("相机")))
     {
         if (camera == nullptr)
         {
@@ -92,6 +90,24 @@ void mainWidget::handleItemClicked(QTreeWidgetItem *item) {
             mStackedWgt->addWidget(camera);
         }
         mStackedWgt->setCurrentWidget(camera);
+    }
+    else if(itemName == "系统日志")
+    {
+        if (syslog == nullptr)
+        {
+            syslog = new sysLogWidget();
+            mStackedWgt->addWidget(syslog);
+        }
+        mStackedWgt->setCurrentWidget(syslog);
+    }
+    else if(itemName == "系统设置")
+    {
+        if (sysSetting == nullptr)
+        {
+            sysSetting = new sysSettingWidget();
+            mStackedWgt->addWidget(sysSetting);
+        }
+        mStackedWgt->setCurrentWidget(sysSetting);
     }
 }
 

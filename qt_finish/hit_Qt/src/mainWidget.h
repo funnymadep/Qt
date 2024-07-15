@@ -31,6 +31,8 @@ private:
 
     lidarWidget *lidar = nullptr;
     cameraWidget *camera = nullptr;
+    sysLogWidget *syslog = nullptr;
+    sysSettingWidget *sysSetting = nullptr;
     
 };
 #endif // WIDGET_H

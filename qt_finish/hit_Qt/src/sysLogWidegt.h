@@ -11,10 +11,16 @@ public:
     sysLogWidget(QWidget *parent = nullptr);
     ~sysLogWidget();
 
+    void createSearch(QVBoxLayout *vlayout);
+    void createSearchList(QVBoxLayout *vlayout);
 private slots:
-
+    void searchCriteriaButtonClick();
+    void resetsearchCriteriaButtonClick();
 private:
-    
+    QPushButton *mSearchCriteria;        //查询条件
+    QPushButton *mResetsearchCriteria;   //重置查询条件
+
+    QTableWidget *mSearchList;
 };
 
 #endif
