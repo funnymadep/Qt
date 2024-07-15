@@ -11,8 +11,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
  
 aux_source_directory(./src SRC_LIST)  
  
-find_package(Qt5 COMPONENTS Core Widgets Gui Sql Xml Network 3DCore 3DExtras 3DInput 3DRender REQUIRED)
+find_package(Qt5 COMPONENTS Core Widgets Gui Sql Xml Network 3DCore 3DExtras 3DInput 3DRender Multimedia MultimediaWidgets REQUIRED)
  
-add_executable(${PROJECT_NAME}  ${SRC_LIST})
+add_executable(${PROJECT_NAME}  ${SRC_LIST} resources.qrc)
  
-target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Xml Qt5::Sql Qt5::Network Qt5::3DCore Qt5::3DExtras Qt5::3DInput Qt5::3DRender)
+target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Xml Qt5::Sql 
+    Qt5::Network Qt5::3DCore Qt5::3DExtras Qt5::3DInput Qt5::3DRender Qt5::Multimedia Qt5::MultimediaWidgets)
