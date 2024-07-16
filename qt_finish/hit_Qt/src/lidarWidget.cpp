@@ -70,8 +70,10 @@ void lidarWidget::createStatus(QVBoxLayout *vLeft)
 
 void lidarWidget::createCloudPoint(QVBoxLayout *vLeft)
 {
-    QLabel * test = new QLabel(tr("点云显示部分 还未完成"));
-    vLeft->addWidget(test);
+    pointCloudWidget *pointWidget = new pointCloudWidget(this);
+    vLeft->addWidget(pointWidget);
+
+    // Client client(pointWidget);
 }
 
 void lidarWidget::createSetting(QHBoxLayout *hlayout)

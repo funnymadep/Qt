@@ -2,6 +2,7 @@
 #define LIDAR_WIDGET_H 
 
 #include "global.h"
+#include "pointCloudWidget.h"
 
 class lidarWidget : public QWidget
 {

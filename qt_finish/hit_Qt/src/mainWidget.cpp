@@ -7,6 +7,7 @@ mainWidget::mainWidget(QWidget *parent)
     mlayout = new QVBoxLayout();
     init();
     setLayout(mlayout);
+    setAutoFillBackground(true);
 }
 
 mainWidget::~mainWidget()

@@ -17,11 +17,10 @@ cameraWidget::cameraWidget(QWidget *parent) : QWidget(parent), selectedRect(null
 
     mainLayout->addWidget(statusWidget);
 
-    // 图像及防撞区域部分
     mView = new QGraphicsView(centralWidget);
     mScene = new QGraphicsScene(this);
     mView->setScene(mScene);
-    mView->setFixedHeight(400);
+    mView->setMinimumSize(500, 500);
 
 
     mVideoItem = new QGraphicsVideoItem();
@@ -77,9 +76,10 @@ cameraWidget::cameraWidget(QWidget *parent) : QWidget(parent), selectedRect(null
 
     mainLayout->addWidget(saveButton);
 
-    QString rtspUrl = "rtsp://admin:sd123456@192.168.1.89:554/h264/ch1/main/av_stream";
-    mMediaPlayer->setMedia(QUrl(rtspUrl));
-    mMediaPlayer->play();
+    // test camera
+    // QString rtspUrl = "rtsp://admin:sd123456@192.168.1.89:554/h264/ch1/main/av_stream";
+    // mMediaPlayer->setMedia(QUrl(rtspUrl));
+    // mMediaPlayer->play();
 
 
     mView->setRenderHint(QPainter::Antialiasing);
