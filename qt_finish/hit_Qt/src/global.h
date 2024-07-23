@@ -32,5 +32,18 @@
 #include <QCursor>
 #include <QGraphicsVideoItem>
 #include <QMediaPlayer>
+#include <QMainWindow>
+#include <iostream>
+
+#include <pcl/point_cloud.h>
+#include <pcl/visualization/pcl_visualizer.h>
+#include <vtkSmartPointer.h>
+#include <vtkRenderer.h>
+#include <vtkRenderWindow.h>
+#include <vtkRenderWindowInteractor.h>
+#include <QVTKOpenGLNativeWidget.h>
+#include <vtkGenericOpenGLRenderWindow.h>
+#include <vtkGenericOpenGLRenderWindow.h>
+
 
 #endif

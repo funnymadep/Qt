@@ -1,7 +1,10 @@
 #ifndef SYS_SETTING_WIDGET_H
 #define SYS_SETTING_WIDGET_H
 
-#include "global.h"
+#include <QLabel>
+#include <QWidget>
+#include <QVBoxLayout>
+#include <QPushButton>
 
 class sysSettingWidget : public QWidget
 {
@@ -14,6 +17,8 @@ public:
     void createStatus(QVBoxLayout *vlayout);
     void createSetting(QVBoxLayout *vlayout);
     void sysBypassChecked();
+    void sysReboot();
+    void systemReboot();
 private slots:
     void SettingButtonGroupClicked(int id);
 private:

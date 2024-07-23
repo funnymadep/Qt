@@ -1,7 +1,10 @@
 #ifndef SYS_LOG_WIDGET_H
 #define SYS_LOG_WIDGET_H
 
-#include "global.h"
+#include <QPushButton>
+#include <QTableWidget>
+#include <QVBoxLayout>
+#include <QWidget>
 
 class sysLogWidget : public QWidget
 {

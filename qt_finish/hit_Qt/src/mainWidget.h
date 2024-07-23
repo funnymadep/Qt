@@ -5,8 +5,13 @@
 #include "lidarWidget.h"
 #include "sysLogWidegt.h"
 #include "sysSettingWidget.h"
-#include "global.h"
 
+#include <QVBoxLayout>
+#include <QTreeWidget>
+#include <QStackedWidget>
+#include <QWidget>
+#include <iostream>
+#include <memory>
 
 class mainWidget : public QWidget
 {

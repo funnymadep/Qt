@@ -1,5 +1,12 @@
 #include "sysSettingWidget.h"
 
+#include <QHBoxLayout>
+#include <QButtonGroup>
+#include <QApplication>
+#include <QProcess>
+#include <QMessageBox>
+#include <QDebug>
+
 sysSettingWidget::sysSettingWidget(QWidget *parent)
 {
     QVBoxLayout *vlayout = new QVBoxLayout();
@@ -77,6 +84,17 @@ void sysSettingWidget::createSetting(QVBoxLayout *vlayout)
     connect(buttonGroup, &QButtonGroup::idClicked, this, &sysSettingWidget::SettingButtonGroupClicked);
 }
 
+void sysSettingWidget::sysReboot()
+{
+    qApp->exit(10);
+}
+
+void sysSettingWidget::systemReboot()
+{
+    QProcess reboot;
+    reboot.start("sudo", QStringList() << tr("reboot"));
+}
+
 void sysSettingWidget::SettingButtonGroupClicked(int id)
 {
     switch (id)
@@ -85,10 +103,10 @@ void sysSettingWidget::SettingButtonGroupClicked(int id)
         sysBypassChecked();
         break;
     case 2:
-        
+        sysReboot();
         break;
     case 3:
-        
+        systemReboot();
         break;
     default:
         QMessageBox::critical(this, tr("button id"), tr("button id error"));

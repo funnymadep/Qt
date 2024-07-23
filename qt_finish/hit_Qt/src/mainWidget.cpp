@@ -1,4 +1,6 @@
 #include "mainWidget.h"
+#include <QTreeWidgetItem>
+#include <QHBoxLayout>
 
 mainWidget::mainWidget(QWidget *parent)
     : QWidget(parent)
@@ -7,6 +9,7 @@ mainWidget::mainWidget(QWidget *parent)
     mlayout = new QVBoxLayout();
     init();
     setLayout(mlayout);
+    setAutoFillBackground(true);
 }
 
 mainWidget::~mainWidget()
@@ -70,19 +73,15 @@ void mainWidget::createMenu(QHBoxLayout *h)
 void mainWidget::handleItemClicked(QTreeWidgetItem *item) {
     QString itemName = item->text(0);  // 获取被点击的 QTreeWidgetItem 的第一个列的文本
 
-    if (itemName.contains(tr("激光")))
-    {
-        // QMessageBox::information(this, "Item Clicked", "电气房左侧激光 被点击了");
-            
-        if (lidar == nullptr)
-        {
-            lidar = new lidarWidget();
-            mStackedWgt->addWidget(lidar);
-        }
-        mStackedWgt->setCurrentWidget(lidar);
-        
+    if (itemName.contains(tr("激光"))) {
+            if (!lidar) {
+                lidar = new lidarWidget(this);
+                mStackedWgt->addWidget(lidar);
+            }
+            mStackedWgt->setCurrentWidget(lidar);
     }
-    else if(itemName.contains(tr("相机")))
+
+    if(itemName.contains(tr("相机")))
     {
         if (camera == nullptr)
         {
@@ -91,7 +90,17 @@ void mainWidget::handleItemClicked(QTreeWidgetItem *item) {
         }
         mStackedWgt->setCurrentWidget(camera);
     }
-    else if(itemName == "系统日志")
+    else
+    {
+        if (camera)
+        {
+            mStackedWgt->removeWidget(camera);
+            delete camera;  // 删除对象，释放内存
+            camera = nullptr;
+        }
+    }
+    
+    if(itemName == "系统日志")
     {
         if (syslog == nullptr)
         {
@@ -100,7 +109,17 @@ void mainWidget::handleItemClicked(QTreeWidgetItem *item) {
         }
         mStackedWgt->setCurrentWidget(syslog);
     }
-    else if(itemName == "系统设置")
+    else
+    {
+        if (syslog)
+        {
+            mStackedWgt->removeWidget(syslog);
+            delete syslog;  // 删除对象，释放内存
+            syslog = nullptr;
+        }
+    }
+
+    if(itemName == "系统设置")
     {
         if (sysSetting == nullptr)
         {
@@ -108,6 +127,15 @@ void mainWidget::handleItemClicked(QTreeWidgetItem *item) {
             mStackedWgt->addWidget(sysSetting);
         }
         mStackedWgt->setCurrentWidget(sysSetting);
+    }
+    else
+    {
+        if (sysSetting)
+        {
+            mStackedWgt->removeWidget(sysSetting);
+            delete sysSetting;  // 删除对象，释放内存
+            sysSetting = nullptr;
+        }
     }
 }
 

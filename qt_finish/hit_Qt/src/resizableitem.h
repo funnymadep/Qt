@@ -4,6 +4,7 @@
 #include <QGraphicsRectItem>
 #include <QGraphicsSceneMouseEvent>
 
+
 class ResizableRectItem : public QGraphicsRectItem {
 public:
     ResizableRectItem(const QRectF &rect);

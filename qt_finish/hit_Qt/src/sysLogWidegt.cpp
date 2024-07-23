@@ -1,5 +1,14 @@
 #include "sysLogWidegt.h"
 
+#include <QPushButton>
+#include <QCheckBox>
+#include <QButtonGroup>
+#include <QDebug>
+#include <QDateTimeEdit>
+#include <QTime>
+#include <QTimeEdit>
+
+
 sysLogWidget::sysLogWidget(QWidget *parent)
 {
     QVBoxLayout *vlayout = new QVBoxLayout();
@@ -21,9 +30,28 @@ void sysLogWidget::createSearch(QVBoxLayout *vlayout)
     QButtonGroup *buttonGroup = new QButtonGroup(this);
     buttonGroup->setExclusive(false);
 
-    QCheckBox *alarmTime = new QCheckBox(tr("报警时间"), this);
-    v->addWidget(alarmTime);
-    buttonGroup->addButton(alarmTime, 1);
+    {
+        QHBoxLayout *h = new QHBoxLayout();
+        v->addLayout(h);
+
+        QDateTimeEdit *dateTimeEdit = new QDateTimeEdit(this);
+        h->addWidget(dateTimeEdit);
+        dateTimeEdit->setDisplayFormat("yyyy-MM-dd");
+
+        QDateTime minDateTime(QDate(2024, 1, 1), QTime(12, 0));
+        dateTimeEdit->setMinimumDateTime(minDateTime);
+        dateTimeEdit->setMaximumDateTime(QDateTime::currentDateTime());
+        dateTimeEdit->setCalendarPopup(true);
+
+        QTimeEdit *timeEdit = new QTimeEdit(this);
+        h->addWidget(timeEdit);
+        timeEdit->setMaximumTime(QTime::currentTime());
+        timeEdit->setCalendarPopup(true);
+
+        QCheckBox *alarmTime = new QCheckBox(tr("报警时间"), this);
+        h->addWidget(alarmTime);
+        buttonGroup->addButton(alarmTime, 1);
+    }
 
     QCheckBox *blockLenth = new QCheckBox(tr("障碍物距离"), this);
     v->addWidget(blockLenth);

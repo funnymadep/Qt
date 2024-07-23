@@ -1,8 +1,20 @@
 #ifndef CAMERA_WIDGET_H
 #define CAMERA_WIDGET_H
 
-#include "global.h"
 #include "resizableitem.h"
+
+
+#include <QLabel>
+#include <QWidget>
+#include <QGraphicsScene>
+#include <QGraphicsView>
+#include <QGraphicsItem>
+#include <QGraphicsVideoItem>
+#include <QMediaPlayer>
+#include <QLineEdit>
+
+
+
 
 class cameraWidget : public QWidget
 {
