@@ -1,0 +1,43 @@
+#include "TcpServer.h"
+#include <boost/bind.hpp>
+#include <iostream>
+#include <cstdlib>
+#include <ctime>
+
+TcpServer::TcpServer(QObject *parent) :
+    QObject(parent),
+    acceptor(ioService, boost::asio::ip::tcp::endpoint(boost::asio::ip::tcp::v4(), 12345)),
+    socket(ioService)
+{
+    std::srand(static_cast<unsigned int>(std::time(nullptr)));
+    startAccept();
+    ioService.run();
+}
+
+void TcpServer::startAccept()
+{
+    acceptor.async_accept(socket, boost::bind(&TcpServer::generateRandomPointCloud, this, pcl::PointCloud<pcl::PointXYZ>::Ptr(new pcl::PointCloud<pcl::PointXYZ>)));
+}
+
+void TcpServer::generateRandomPointCloud(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud)
+{
+    cloud->width = 10000; // 假设有10000个点
+    cloud->height = 1;
+    cloud->points.resize(cloud->width * cloud->height);
+
+    for (auto& point : cloud->points) {
+        point.x = static_cast<float>(std::rand()) / RAND_MAX;
+        point.y = static_cast<float>(std::rand()) / RAND_MAX;
+        point.z = static_cast<float>(std::rand()) / RAND_MAX;
+    }
+
+    std::ostringstream oss;
+    pcl::io::savePCDFileBinary(oss, *cloud);
+    std::string data = oss.str();
+
+    boost::asio::write(socket, boost::asio::buffer(data));
+    std::cout << "Sent point cloud data of size: " << data.size() << std::endl;
+
+    socket.close();
+    startAccept();
+}
