@@ -1,0 +1,16 @@
+[  7%] [34m[1mAutomatic MOC for target hit_menu[0m
+[  7%] Built target hit_menu_autogen
+[35m[1mConsolidate compiler generated dependencies of target hit_menu[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o[0m
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:[m[K In lambda function:
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:115:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kthis[m[K’ was not captured for this lambda function
+  115 |         [01;31m[Kjson_publisher_[m[K = node->create_publisher<std_msgs::msg::String>("json_topic", 10);
+      |         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:115:9:[m[K [01;31m[Kerror: [m[Kinvalid use of non-static data member ‘[01m[KcameraWidget::json_publisher_[m[K’
+In file included from [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:1[m[K:
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:57:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr [01;36m[Kjson_publisher_[m[K;
+      |                                                         [01;36m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:97: CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/hit_menu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

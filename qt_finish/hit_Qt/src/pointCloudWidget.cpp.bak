@@ -1,0 +1,82 @@
+#include "pointCloudWidget.h"
+#include <QVBoxLayout>
+#include <vtkRenderWindowInteractor.h>
+#include <vtkInteractorStyleTrackballCamera.h>
+#include <vtkPoints.h>
+#include <vtkVertexGlyphFilter.h>
+
+PointCloudWidget::PointCloudWidget(QWidget *parent) :
+    QWidget(parent),
+    vtkWidget(new QVTKOpenGLNativeWidget(this)),
+    udpSocket(new QUdpSocket(this))
+{
+    QVBoxLayout *layout = new QVBoxLayout(this);
+    layout->addWidget(vtkWidget);
+    setLayout(layout);
+
+    udpSocket->bind(QHostAddress::Any, 8888);
+    connect(udpSocket, &QUdpSocket::readyRead, this, &PointCloudWidget::processPendingDatagrams);
+
+    qDebug() << "UDP Socket state:" << udpSocket->state();
+
+    initializeVTK();
+}
+
+PointCloudWidget::~PointCloudWidget()
+{
+}
+
+void PointCloudWidget::initializeVTK()
+{
+    renderWindow = vtkSmartPointer<vtkGenericOpenGLRenderWindow>::New();
+    renderer = vtkSmartPointer<vtkRenderer>::New();
+    renderWindow->AddRenderer(renderer);
+
+    pointCloudData = vtkSmartPointer<vtkPolyData>::New();
+    pointCloudMapper = vtkSmartPointer<vtkPolyDataMapper>::New();
+    pointCloudMapper->SetInputData(pointCloudData);
+    pointCloudActor = vtkSmartPointer<vtkActor>::New();
+    pointCloudActor->SetMapper(pointCloudMapper);
+    renderer->AddActor(pointCloudActor);
+
+    vtkWidget->setRenderWindow(renderWindow);
+    vtkWidget->renderWindow()->GetInteractor()->SetInteractorStyle(
+        vtkSmartPointer<vtkInteractorStyleTrackballCamera>::New());
+}
+
+void PointCloudWidget::processPendingDatagrams()
+{
+    while (udpSocket->hasPendingDatagrams()) {
+        qDebug() << "1";
+        QByteArray datagram;
+        datagram.resize(udpSocket->pendingDatagramSize());
+        udpSocket->readDatagram(datagram.data(), datagram.size());
+
+        qDebug() << datagram.size();
+
+        // 假设datagram包含点云数据，每个点是(x, y, z)的float
+        vtkSmartPointer<vtkPoints> points = vtkSmartPointer<vtkPoints>::New();
+        const float* data = reinterpret_cast<const float*>(datagram.data());
+        int numPoints = datagram.size() / (3 * sizeof(float));
+
+        for (int i = 0; i < numPoints; ++i) {
+            points->InsertNextPoint(data[3*i], data[3*i+1], data[3*i+2]);
+        }
+
+        vtkSmartPointer<vtkPolyData> polyData = vtkSmartPointer<vtkPolyData>::New();
+        polyData->SetPoints(points);
+
+        vtkSmartPointer<vtkVertexGlyphFilter> glyphFilter = vtkSmartPointer<vtkVertexGlyphFilter>::New();
+        glyphFilter->SetInputData(polyData);
+        glyphFilter->Update();
+
+        updatePointCloud(glyphFilter->GetOutput());
+    }
+}
+
+void PointCloudWidget::updatePointCloud(vtkSmartPointer<vtkPolyData> polyData)
+{
+    pointCloudData->DeepCopy(polyData);
+    pointCloudMapper->Update();
+    renderWindow->Render();
+}

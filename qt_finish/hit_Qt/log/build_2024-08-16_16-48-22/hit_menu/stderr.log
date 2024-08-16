@@ -1,0 +1,9 @@
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:[m[K In lambda function:
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:118:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kros_node_[m[K’ was not declared in this scope; did you mean ‘[01m[Krmw_node_t[m[K’?
+  118 |             rclcpp::spin_some([01;31m[Kros_node_[m[K);
+      |                               [01;31m[K^~~~~~~~~[m[K
+      |                               [32m[Krmw_node_t[m[K
+gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:97: CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/hit_menu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,10 @@
+[0m** WARNING ** io features related to pcap will be disabled[0m
+[0m** WARNING ** io features related to png will be disabled[0m
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/hitRosThread.cpp:[m[K In member function ‘[01m[Kvirtual void HitRosThread::run()[m[K’:
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/hitRosThread.cpp:17:18:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ was not declared in this scope
+   17 |     rclcpp::spin([01;31m[Knode[m[K);
+      |                  [01;31m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:111: CMakeFiles/hit_menu.dir/src/hitRosThread.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/hit_menu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

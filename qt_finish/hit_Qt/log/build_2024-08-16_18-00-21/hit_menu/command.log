@@ -1,0 +1,4 @@
+Invoking command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sd-robot/hql_test/hit_Qt/build/hit_menu -- -j24 -l24
+Invoked command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sd-robot/hql_test/hit_Qt/build/hit_menu -- -j24 -l24
+Invoking command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sd-robot/hql_test/hit_Qt/build/hit_menu
+Invoked command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sd-robot/hql_test/hit_Qt/build/hit_menu

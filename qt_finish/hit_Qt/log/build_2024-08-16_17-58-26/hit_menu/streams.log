@@ -1,0 +1,158 @@
+[0.005s] Invoking command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sd-robot/hql_test/hit_Qt/src/hit_Qt -DCMAKE_INSTALL_PREFIX=/home/sd-robot/hql_test/hit_Qt/install/hit_menu
+[0.030s] -- The C compiler identification is GNU 11.4.0
+[0.056s] -- The CXX compiler identification is GNU 11.4.0
+[0.059s] -- Detecting C compiler ABI info
+[0.090s] -- Detecting C compiler ABI info - done
+[0.094s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.094s] -- Detecting C compile features
+[0.094s] -- Detecting C compile features - done
+[0.096s] -- Detecting CXX compiler ABI info
+[0.131s] -- Detecting CXX compiler ABI info - done
+[0.134s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.134s] -- Detecting CXX compile features
+[0.135s] -- Detecting CXX compile features - done
+[0.136s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.315s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.366s] -- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)
+[0.391s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.393s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.398s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.405s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.415s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.452s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.453s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.500s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.517s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.542s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.548s] -- Looking for pthread.h
+[0.584s] -- Looking for pthread.h - found
+[0.584s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.619s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.619s] -- Found Threads: TRUE  
+[0.698s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.796s] -- Checking for module 'libusb-1.0'
+[0.801s] --   Found libusb-1.0, version 1.0.25
+[0.814s] -- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  
+[0.815s] -- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") 
+[0.815s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[0.836s] -- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") 
+[0.836s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[0.837s] [0m** WARNING ** io features related to pcap will be disabled[0m
+[0.837s] [0m** WARNING ** io features related to png will be disabled[0m
+[0.856s] -- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  
+[0.860s] -- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX 
+[0.951s] -- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") 
+[0.951s] -- Found MPI: TRUE (found version "3.1") found components: C 
+[0.953s] -- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") 
+[0.959s] -- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") 
+[0.969s] -- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") 
+[0.971s] -- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") 
+[1.013s] -- Found X11: /usr/include   
+[1.013s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so
+[1.051s] -- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found
+[1.051s] -- Looking for gethostbyname
+[1.082s] -- Looking for gethostbyname - found
+[1.082s] -- Looking for connect
+[1.113s] -- Looking for connect - found
+[1.113s] -- Looking for remove
+[1.152s] -- Looking for remove - found
+[1.152s] -- Looking for shmat
+[1.183s] -- Looking for shmat - found
+[1.183s] -- Looking for IceConnectionNumber in ICE
+[1.214s] -- Looking for IceConnectionNumber in ICE - found
+[1.250s] -- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") 
+[1.251s] -- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  
+[1.253s] -- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") 
+[1.253s] -- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") 
+[1.261s] -- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") 
+[1.264s] -- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  
+[1.266s] -- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") 
+[1.269s] -- Found utf8cpp: /usr/include/utf8cpp  
+[1.291s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization 
+[1.294s] -- Checking for module 'eigen3'
+[1.300s] --   Found eigen3, version 3.4.0
+[1.314s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.3") 
+[1.314s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.317s] -- Eigen found (include: /usr/include/eigen3, version: 3.4.0)
+[1.329s] -- Checking for module 'flann'
+[1.335s] --   Found flann, version 1.9.1
+[1.353s] -- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  
+[1.353s] -- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)
+[1.356s] -- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)
+[1.359s] -- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)
+[1.434s] -- looking for PCL_OCTREE
+[1.434s] -- Found PCL_OCTREE: /usr/local/lib/libpcl_octree.so  
+[1.434s] -- looking for PCL_IO
+[1.434s] -- Found PCL_IO: /usr/local/lib/libpcl_io.so  
+[1.434s] -- looking for PCL_COMMON
+[1.434s] -- Found PCL_COMMON: /usr/local/lib/libpcl_common.so  
+[1.434s] -- looking for PCL_COMPRESSION
+[1.434s] -- Could NOT find PCL_COMPRESSION (missing: PCL_COMPRESSION_LIBRARY) 
+[1.435s] -- looking for PCL_KDTREE
+[1.435s] -- Found PCL_KDTREE: /usr/local/lib/libpcl_kdtree.so  
+[1.435s] -- looking for PCL_GEOMETRY
+[1.435s] -- Found PCL_GEOMETRY: /usr/local/include/pcl-1.13  
+[1.435s] -- looking for PCL_SEARCH
+[1.435s] -- Found PCL_SEARCH: /usr/local/lib/libpcl_search.so  
+[1.435s] -- looking for PCL_VISUALIZATION
+[1.435s] -- Found PCL_VISUALIZATION: /usr/local/lib/libpcl_visualization.so  
+[1.435s] -- Found PCL: pcl_octree;pcl_io;pcl_common;pcl_kdtree;pcl_search;pcl_visualization;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN  
+[1.742s] -- Found Python3: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.10") found components: Interpreter Development.Module Development.Embed 
+[1.855s] -- Found HDF5: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so;/usr/lib/x86_64-linux-gnu/libcrypto.so;/usr/lib/x86_64-linux-gnu/libcurl.so;/usr/lib/x86_64-linux-gnu/libpthread.a;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.a;/usr/lib/x86_64-linux-gnu/libm.so (found version "1.10.7") found components: C HL 
+[1.856s] -- Found NetCDF: /usr/include (found version "4.8.1") 
+[1.857s] -- Found OGG: /usr/lib/x86_64-linux-gnu/libogg.so  
+[1.859s] -- Found THEORA: /usr/lib/x86_64-linux-gnu/libtheora.so  
+[1.883s] -- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.13") 
+[1.892s] -- Found GL2PS: /usr/lib/x86_64-linux-gnu/libgl2ps.so (found suitable version "1.4.2", minimum required is "1.4.2") 
+[1.896s] -- Found SQLite3: /usr/include (found version "3.37.2") 
+[1.899s] -- Found LibPROJ: /usr/lib/x86_64-linux-gnu/libproj.so (found version "8.2.1") 
+[1.945s] -- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)
+[2.085s] -- Configuring done
+[2.140s] -- Generating done
+[2.141s] -- Build files have been written to: /home/sd-robot/hql_test/hit_Qt/build/hit_menu
+[2.151s] Invoked command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/sd-robot/hql_test/hit_Qt/src/hit_Qt -DCMAKE_INSTALL_PREFIX=/home/sd-robot/hql_test/hit_Qt/install/hit_menu
+[2.153s] Invoking command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sd-robot/hql_test/hit_Qt/build/hit_menu -- -j24 -l24
+[2.177s] [  7%] [34m[1mAutomatic MOC for target hit_menu[0m
+[8.589s] [  7%] Built target hit_menu_autogen
+[8.594s] [ 15%] [34m[1mAutomatic RCC for resources.qrc[0m
+[8.610s] [ 69%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/resizableitem.cpp.o[0m
+[8.611s] [ 69%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/lidarWidget.cpp.o[0m
+[8.611s] [ 69%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/hit_menu_autogen/mocs_compilation.cpp.o[0m
+[8.611s] [ 69%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/point_cloud_subscriber.cpp.o[0m
+[8.611s] [ 69%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/main.cpp.o[0m
+[8.611s] [ 69%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o[0m
+[8.611s] [ 69%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/mainWidget.cpp.o[0m
+[8.612s] [ 84%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/sysSettingWidget.cpp.o[0m
+[8.612s] [ 84%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/sysLogWidegt.cpp.o[0m
+[8.612s] [ 92%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/hit_menu_autogen/EWIEGA46WW/qrc_resources.cpp.o[0m
+[8.795s] In file included from [01m[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/moc_cameraWidget.cpp:10[m[K,
+[8.795s]                  from [01m[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/mocs_compilation.cpp:2[m[K:
+[8.795s] [01m[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/../../../../src/hit_Qt/src/cameraWidget.h:17:10:[m[K [01;31m[Kfatal error: [m[KhitRosThread.h: No such file or directory
+[8.795s]    17 | #include [01;31m[K"hitRosThread.h"[m[K
+[8.795s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[8.795s] compilation terminated.
+[8.795s] In file included from [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:1[m[K:
+[8.796s] [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:17:10:[m[K [01;31m[Kfatal error: [m[KhitRosThread.h: No such file or directory
+[8.796s]    17 | #include [01;31m[K"hitRosThread.h"[m[K
+[8.796s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[8.796s] compilation terminated.
+[8.797s] In file included from [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.h:4[m[K,
+[8.797s]                  from [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.cpp:1[m[K:
+[8.797s] [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:17:10:[m[K [01;31m[Kfatal error: [m[KhitRosThread.h: No such file or directory
+[8.797s]    17 | #include [01;31m[K"hitRosThread.h"[m[K
+[8.797s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[8.797s] compilation terminated.
+[8.804s] gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:97: CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o] Error 1
+[8.804s] gmake[2]: *** Waiting for unfinished jobs....
+[8.804s] gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:83: CMakeFiles/hit_menu.dir/hit_menu_autogen/mocs_compilation.cpp.o] Error 1
+[8.804s] In file included from [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.h:4[m[K,
+[8.804s]                  from [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/main.cpp:1[m[K:
+[8.804s] [01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:17:10:[m[K [01;31m[Kfatal error: [m[KhitRosThread.h: No such file or directory
+[8.804s]    17 | #include [01;31m[K"hitRosThread.h"[m[K
+[8.804s]       |          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[8.804s] compilation terminated.
+[8.804s] gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:139: CMakeFiles/hit_menu.dir/src/mainWidget.cpp.o] Error 1
+[8.807s] gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:125: CMakeFiles/hit_menu.dir/src/main.cpp.o] Error 1
+[17.611s] gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/hit_menu.dir/all] Error 2
+[17.612s] gmake: *** [Makefile:146: all] Error 2
+[17.613s] Invoked command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sd-robot/hql_test/hit_Qt/build/hit_menu -- -j24 -l24

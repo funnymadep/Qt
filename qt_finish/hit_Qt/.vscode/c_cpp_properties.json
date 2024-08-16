@@ -8,13 +8,14 @@
                 "/usr/include/x86_64-linux-gnu/qt5/QtGui",
                 "/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
                 "/usr/include/x86_64-linux-gnu/qt5/QtXml",
+                "/usr/include/x86_64-linux-gnu/qt5/QtNetwork",
                 "/usr/include/x86_64-linux-gnu/qt5/QtMultimedia",
                 "/usr/include/x86_64-linux-gnu/qt5/QtMultimediaWidgets"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/g++",
             "cStandard": "c17",
-            "cppStandard": "c++14",
+            "cppStandard": "c++17",
             "intelliSenseMode": "linux-clang-x64"
         }
     ],

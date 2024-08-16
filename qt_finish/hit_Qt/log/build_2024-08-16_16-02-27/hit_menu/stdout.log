@@ -1,0 +1,4 @@
+[  7%] [34m[1mAutomatic MOC for target hit_menu[0m
+[  7%] Built target hit_menu_autogen
+[35m[1mConsolidate compiler generated dependencies of target hit_menu[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o[0m

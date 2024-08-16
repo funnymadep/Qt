@@ -1,0 +1,17 @@
+[  7%] [34m[1mAutomatic MOC for target hit_menu[0m
+[  7%] Built target hit_menu_autogen
+[35m[1mConsolidate compiler generated dependencies of target hit_menu[0m
+[ 14%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o[0m
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:[m[K In lambda function:
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:118:31:[m[K [01;31m[Kerror: [m[K‘[01m[Knode[m[K’ is not captured
+  118 |             rclcpp::spin_some([01;31m[Knode[m[K);
+      |                               [01;31m[K^~~~[m[K
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:116:41:[m[K [01;36m[Knote: [m[Kthe lambda has no capture-default
+  116 |     ros_spin_thread_ = std::thread([this[01;36m[K][m[K() {
+      |                                         [01;36m[K^[m[K
+[01m[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:110:10:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::shared_ptr<rclcpp::Node> node[m[K’ declared here
+  110 |     auto [01;36m[Knode[m[K = rclcpp::Node::make_shared("json_publisher_node");
+      |          [01;36m[K^~~~[m[K
+gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:97: CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/hit_menu.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

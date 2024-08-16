@@ -1,0 +1,13 @@
+[0.006s] Invoking command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sd-robot/hql_test/hit_Qt/build/hit_menu -- -j24 -l24
+[0.030s] [  7%] [34m[1mAutomatic MOC for target hit_menu[0m
+[0.035s] 
+[0.035s] AutoGen error
+[0.035s] -------------
+[0.035s] Info error in info file
+[0.035s] "/home/sd-robot/hql_test/hit_Qt/build/hit_menu/CMakeFiles/hit_menu_autogen.dir/AutogenInfo.json":
+[0.035s] The header file "SRC:/src/hitRosThread.h" does not exist.
+[0.035s] 
+[0.035s] gmake[2]: *** [CMakeFiles/hit_menu_autogen.dir/build.make:71: CMakeFiles/hit_menu_autogen] Error 1
+[0.035s] gmake[1]: *** [CMakeFiles/Makefile2:164: CMakeFiles/hit_menu_autogen.dir/all] Error 2
+[0.035s] gmake: *** [Makefile:146: all] Error 2
+[0.036s] Invoked command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sd-robot/hql_test/hit_Qt/build/hit_menu -- -j24 -l24

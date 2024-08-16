@@ -1,0 +1,44 @@
+[  7%] [34m[1mAutomatic MOC for target hit_menu[0m
+[  7%] Built target hit_menu_autogen
+[35m[1mConsolidate compiler generated dependencies of target hit_menu[0m
+[ 15%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/hit_menu_autogen/mocs_compilation.cpp.o[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o[0m
+[ 30%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/main.cpp.o[0m
+[ 38%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/mainWidget.cpp.o[0m
+[ 46%] [32m[1mLinking CXX executable hit_menu[0m
+[100%] Built target hit_menu
+-- Install configuration: "Release"
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/lib/hit_menu/hit_menu
+-- Set runtime path of "/home/sd-robot/hql_test/hit_Qt/install/hit_menu/lib/hit_menu/hit_menu" to ""
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src/
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//style.css
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysLogWidegt.cpp
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysSettingWidget.cpp
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//mainWidget.cpp
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysSettingWidget.h
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//point_cloud_subscriber.h
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//point_cloud_subscriber.cpp
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//resizableitem.h
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//main.cpp
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//lidarWidget.cpp
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//cameraWidget.cpp
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysLogWidegt.h
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//mainWidget.h
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//cameraWidget.h
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//lidarWidget.h
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//resizableitem.cpp
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/package_run_dependencies/hit_menu
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/parent_prefix_path/hit_menu
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/ament_prefix_path.sh
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/ament_prefix_path.dsv
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/path.sh
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/path.dsv
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.bash
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.sh
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.zsh
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.dsv
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/package.dsv
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/packages/hit_menu
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/cmake/hit_menuConfig.cmake
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/cmake/hit_menuConfig-version.cmake
+-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/package.xml

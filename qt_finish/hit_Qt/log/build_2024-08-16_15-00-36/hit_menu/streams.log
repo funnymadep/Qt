@@ -1,0 +1,47 @@
+[0.006s] Invoking command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sd-robot/hql_test/hit_Qt/build/hit_menu -- -j24 -l24
+[0.035s] [  7%] [34m[1mAutomatic MOC for target hit_menu[0m
+[0.052s] [  7%] Built target hit_menu_autogen
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target hit_menu[0m
+[0.108s] [ 14%] [32mBuilding CXX object CMakeFiles/hit_menu.dir/src/hitRosThread.cpp.o[0m
+[2.988s] [ 21%] [32m[1mLinking CXX executable hit_menu[0m
+[3.723s] [100%] Built target hit_menu
+[3.731s] Invoked command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/sd-robot/hql_test/hit_Qt/build/hit_menu -- -j24 -l24
+[3.760s] Invoking command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sd-robot/hql_test/hit_Qt/build/hit_menu
+[3.766s] -- Install configuration: "Release"
+[3.766s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/lib/hit_menu/hit_menu
+[3.768s] -- Set runtime path of "/home/sd-robot/hql_test/hit_Qt/install/hit_menu/lib/hit_menu/hit_menu" to ""
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src/
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//hitRosThread.cpp
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//style.css
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysLogWidegt.cpp
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysSettingWidget.cpp
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//mainWidget.cpp
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysSettingWidget.h
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//point_cloud_subscriber.h
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//hitRosThread.h
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//point_cloud_subscriber.cpp
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//resizableitem.h
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//main.cpp
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//lidarWidget.cpp
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//cameraWidget.cpp
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysLogWidegt.h
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//mainWidget.h
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//cameraWidget.h
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//lidarWidget.h
+[3.768s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//resizableitem.cpp
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/package_run_dependencies/hit_menu
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/parent_prefix_path/hit_menu
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/ament_prefix_path.sh
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/ament_prefix_path.dsv
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/path.sh
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/path.dsv
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.bash
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.sh
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.zsh
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.dsv
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/package.dsv
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/packages/hit_menu
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/cmake/hit_menuConfig.cmake
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/cmake/hit_menuConfig-version.cmake
+[3.769s] -- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/package.xml
+[3.770s] Invoked command in '/home/sd-robot/hql_test/hit_Qt/build/hit_menu' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/sd-robot/hql_test/hit_Qt/build/hit_menu

@@ -1,0 +1,340 @@
+[0.000000] (-) TimerEvent: {}
+[0.000082] (hit_menu) JobQueued: {'identifier': 'hit_menu', 'dependencies': OrderedDict()}
+[0.000097] (hit_menu) JobStarted: {'identifier': 'hit_menu'}
+[0.004099] (hit_menu) JobProgress: {'identifier': 'hit_menu', 'progress': 'cmake'}
+[0.004222] (hit_menu) Command: {'cmd': ['/usr/bin/cmake', '/home/sd-robot/hql_test/hit_Qt/src/hit_Qt', '-DCMAKE_INSTALL_PREFIX=/home/sd-robot/hql_test/hit_Qt/install/hit_menu'], 'cwd': '/home/sd-robot/hql_test/hit_Qt/build/hit_menu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'sd-robot'), ('SSH_CLIENT', '192.168.1.35 49953 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('HOMEBREW_PIP_INDEX_URL', 'https://pypi.tuna.tsinghua.edu.cn/simple'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/home/sd-robot/Radar_ws/install/raf_interfaces/lib:/home/sd-robot/Radar_ws/install/oden_interfaces/lib:/home/sd-robot/Radar_ws/install/liboden/lib:/home/sd-robot/Radar_ws/install/arbe_raf/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib/server'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sd-robot'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sd-robot/hql_test/hit_Qt/build'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install:/home/sd-robot/Radar_ws/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:/home/linuxbrew/.linuxbrew/Homebrew/share/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sd-robot'), ('LIBPATH', ':/opt/MonitorSoftware/lib'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '155'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/sd-robot/.local/bin:/opt/ros/humble/bin:/home/sd-robot/anaconda3/condabin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/Homebrew/bin:/home/linuxbrew/.linuxbrew/Homebrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sd-robot/.fishros/bin/'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/sd-robot/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('SHLIB_PATH', ':/opt/MonitorSoftware/lib'), ('GST_PLUGIN_PATH', '/usr/local/lib:/usr/lib/x86_64-linux-gnu/gstreamer-1.0'), ('HOMEBREW_API_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu'), ('HOMEBREW_BOTTLE_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/sd-robot/anaconda3/bin/conda'), ('SSH_CONNECTION', '192.168.1.35 49953 192.168.1.117 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sd-robot/Radar_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Radar_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('LC_NUMERIC', 'en_US.UTF-8'), ('TZ', 'Asia/Shanghai'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', '/home/linuxbrew/.linuxbrew/share/man:/home/linuxbrew/.linuxbrew/Homebrew/share/man::'), ('CMAKE_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.030498] (hit_menu) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.055831] (hit_menu) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.059113] (hit_menu) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.090424] (hit_menu) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.093908] (hit_menu) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.094073] (hit_menu) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.094248] (hit_menu) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.095767] (hit_menu) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.099703] (-) TimerEvent: {}
+[0.130684] (hit_menu) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.134288] (hit_menu) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.134474] (hit_menu) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.134626] (hit_menu) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.136084] (hit_menu) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199877] (-) TimerEvent: {}
+[0.300221] (-) TimerEvent: {}
+[0.315278] (hit_menu) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.365764] (hit_menu) StdoutLine: {'line': b'-- Found rclcpp: 16.0.9 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.390581] (hit_menu) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.393371] (hit_menu) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.397796] (hit_menu) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.400266] (-) TimerEvent: {}
+[0.405035] (hit_menu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.415218] (hit_menu) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.451832] (hit_menu) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.453429] (hit_menu) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500205] (hit_menu) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.500318] (-) TimerEvent: {}
+[0.516661] (hit_menu) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.542356] (hit_menu) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.547839] (hit_menu) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.584044] (hit_menu) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.584182] (hit_menu) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.600528] (-) TimerEvent: {}
+[0.618553] (hit_menu) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.619106] (hit_menu) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.698189] (hit_menu) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.700696] (-) TimerEvent: {}
+[0.795833] (hit_menu) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[0.800869] (-) TimerEvent: {}
+[0.800971] (hit_menu) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[0.814460] (hit_menu) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[0.814932] (hit_menu) StdoutLine: {'line': b'-- Found OpenNI: /usr/lib/libOpenNI.so;libusb::libusb (found version "1.5.4.0") \n'}
+[0.814993] (hit_menu) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[0.836456] (hit_menu) StdoutLine: {'line': b'-- Found OpenNI2: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb (found version "2.2.0.33") \n'}
+[0.836561] (hit_menu) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[0.836590] (hit_menu) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to pcap will be disabled\x1b[0m\n'}
+[0.836629] (hit_menu) StderrLine: {'line': b'\x1b[0m** WARNING ** io features related to png will be disabled\x1b[0m\n'}
+[0.856110] (hit_menu) StdoutLine: {'line': b'-- Found GLEW: /usr/lib/x86_64-linux-gnu/libGLEW.so  \n'}
+[0.860007] (hit_menu) StdoutLine: {'line': b'-- Found OpenGL: /usr/lib/x86_64-linux-gnu/libOpenGL.so  found components: OpenGL GLX \n'}
+[0.901062] (-) TimerEvent: {}
+[0.951156] (hit_menu) StdoutLine: {'line': b'-- Found MPI_C: /usr/lib/x86_64-linux-gnu/libmpi.so (found version "3.1") \n'}
+[0.951340] (hit_menu) StdoutLine: {'line': b'-- Found MPI: TRUE (found version "3.1") found components: C \n'}
+[0.952927] (hit_menu) StdoutLine: {'line': b'-- Found JsonCpp: /usr/lib/x86_64-linux-gnu/libjsoncpp.so (found suitable version "1.9.5", minimum required is "0.7.0") \n'}
+[0.958610] (hit_menu) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.2.11") \n'}
+[0.969253] (hit_menu) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.37") \n'}
+[0.971139] (hit_menu) StdoutLine: {'line': b'-- Found Eigen3: /usr/include/eigen3 (found version "3.4.0") \n'}
+[1.001241] (-) TimerEvent: {}
+[1.013268] (hit_menu) StdoutLine: {'line': b'-- Found X11: /usr/include   \n'}
+[1.013461] (hit_menu) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so\n'}
+[1.051375] (hit_menu) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /usr/lib/x86_64-linux-gnu/libX11.so;/usr/lib/x86_64-linux-gnu/libXext.so - found\n'}
+[1.051501] (hit_menu) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[1.081970] (hit_menu) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[1.082091] (hit_menu) StdoutLine: {'line': b'-- Looking for connect\n'}
+[1.101335] (-) TimerEvent: {}
+[1.112892] (hit_menu) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[1.112999] (hit_menu) StdoutLine: {'line': b'-- Looking for remove\n'}
+[1.151806] (hit_menu) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[1.151925] (hit_menu) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[1.182579] (hit_menu) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[1.182703] (hit_menu) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[1.201420] (-) TimerEvent: {}
+[1.214088] (hit_menu) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[1.250383] (hit_menu) StdoutLine: {'line': b'-- Found EXPAT: /usr/lib/x86_64-linux-gnu/libexpat.so (found version "2.4.7") \n'}
+[1.251439] (hit_menu) StdoutLine: {'line': b'-- Found double-conversion: /usr/lib/x86_64-linux-gnu/libdouble-conversion.so  \n'}
+[1.252691] (hit_menu) StdoutLine: {'line': b'-- Found LZ4: /usr/lib/x86_64-linux-gnu/liblz4.so (found version "1.9.3") \n'}
+[1.253470] (hit_menu) StdoutLine: {'line': b'-- Found LZMA: /usr/lib/x86_64-linux-gnu/liblzma.so (found version "5.2.5") \n'}
+[1.260579] (hit_menu) StdoutLine: {'line': b'-- Found JPEG: /usr/lib/x86_64-linux-gnu/libjpeg.so (found version "80") \n'}
+[1.263870] (hit_menu) StdoutLine: {'line': b'-- Found TIFF: /usr/lib/x86_64-linux-gnu/libtiff.so (found version "4.3.0")  \n'}
+[1.265962] (hit_menu) StdoutLine: {'line': b'-- Found Freetype: /usr/lib/x86_64-linux-gnu/libfreetype.so (found version "2.11.1") \n'}
+[1.268732] (hit_menu) StdoutLine: {'line': b'-- Found utf8cpp: /usr/include/utf8cpp  \n'}
+[1.291150] (hit_menu) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.65.0") found components: system filesystem date_time iostreams serialization \n'}
+[1.294241] (hit_menu) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[1.300081] (hit_menu) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[1.301476] (-) TimerEvent: {}
+[1.313572] (hit_menu) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.3") \n'}
+[1.313640] (hit_menu) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.316608] (hit_menu) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.329305] (hit_menu) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[1.335422] (hit_menu) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[1.353023] (hit_menu) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[1.353124] (hit_menu) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[1.356305] (hit_menu) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.359304] (hit_menu) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.401580] (-) TimerEvent: {}
+[1.433739] (hit_menu) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[1.433970] (hit_menu) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/local/lib/libpcl_octree.so  \n'}
+[1.434032] (hit_menu) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[1.434205] (hit_menu) StdoutLine: {'line': b'-- Found PCL_IO: /usr/local/lib/libpcl_io.so  \n'}
+[1.434263] (hit_menu) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[1.434374] (hit_menu) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/local/lib/libpcl_common.so  \n'}
+[1.434519] (hit_menu) StdoutLine: {'line': b'-- looking for PCL_COMPRESSION\n'}
+[1.434577] (hit_menu) StdoutLine: {'line': b'-- Could NOT find PCL_COMPRESSION (missing: PCL_COMPRESSION_LIBRARY) \n'}
+[1.434605] (hit_menu) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[1.434643] (hit_menu) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/local/lib/libpcl_kdtree.so  \n'}
+[1.434753] (hit_menu) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[1.434822] (hit_menu) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/local/include/pcl-1.13  \n'}
+[1.434862] (hit_menu) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[1.435010] (hit_menu) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/local/lib/libpcl_search.so  \n'}
+[1.435087] (hit_menu) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[1.435235] (hit_menu) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/local/lib/libpcl_visualization.so  \n'}
+[1.435509] (hit_menu) StdoutLine: {'line': b'-- Found PCL: pcl_octree;pcl_io;pcl_common;pcl_kdtree;pcl_search;pcl_visualization;Boost::system;Boost::filesystem;Boost::date_time;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN  \n'}
+[1.501650] (-) TimerEvent: {}
+[1.601878] (-) TimerEvent: {}
+[1.702110] (-) TimerEvent: {}
+[1.742095] (hit_menu) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.10") found components: Interpreter Development.Module Development.Embed \n'}
+[1.802228] (-) TimerEvent: {}
+[1.854744] (hit_menu) StdoutLine: {'line': b'-- Found HDF5: /usr/lib/x86_64-linux-gnu/hdf5/serial/libhdf5.so;/usr/lib/x86_64-linux-gnu/libcrypto.so;/usr/lib/x86_64-linux-gnu/libcurl.so;/usr/lib/x86_64-linux-gnu/libpthread.a;/usr/lib/x86_64-linux-gnu/libsz.so;/usr/lib/x86_64-linux-gnu/libz.so;/usr/lib/x86_64-linux-gnu/libdl.a;/usr/lib/x86_64-linux-gnu/libm.so (found version "1.10.7") found components: C HL \n'}
+[1.856343] (hit_menu) StdoutLine: {'line': b'-- Found NetCDF: /usr/include (found version "4.8.1") \n'}
+[1.857407] (hit_menu) StdoutLine: {'line': b'-- Found OGG: /usr/lib/x86_64-linux-gnu/libogg.so  \n'}
+[1.858728] (hit_menu) StdoutLine: {'line': b'-- Found THEORA: /usr/lib/x86_64-linux-gnu/libtheora.so  \n'}
+[1.882780] (hit_menu) StdoutLine: {'line': b'-- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.13") \n'}
+[1.891775] (hit_menu) StdoutLine: {'line': b'-- Found GL2PS: /usr/lib/x86_64-linux-gnu/libgl2ps.so (found suitable version "1.4.2", minimum required is "1.4.2") \n'}
+[1.895690] (hit_menu) StdoutLine: {'line': b'-- Found SQLite3: /usr/include (found version "3.37.2") \n'}
+[1.898704] (hit_menu) StdoutLine: {'line': b'-- Found LibPROJ: /usr/lib/x86_64-linux-gnu/libproj.so (found version "8.2.1") \n'}
+[1.902300] (-) TimerEvent: {}
+[1.945076] (hit_menu) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[2.002474] (-) TimerEvent: {}
+[2.084998] (hit_menu) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.102628] (-) TimerEvent: {}
+[2.139798] (hit_menu) StdoutLine: {'line': b'-- Generating done\n'}
+[2.141084] (hit_menu) StdoutLine: {'line': b'-- Build files have been written to: /home/sd-robot/hql_test/hit_Qt/build/hit_menu\n'}
+[2.151088] (hit_menu) CommandEnded: {'returncode': 0}
+[2.151663] (hit_menu) JobProgress: {'identifier': 'hit_menu', 'progress': 'build'}
+[2.152171] (hit_menu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu', '--', '-j24', '-l24'], 'cwd': '/home/sd-robot/hql_test/hit_Qt/build/hit_menu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'sd-robot'), ('SSH_CLIENT', '192.168.1.35 49953 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('HOMEBREW_PIP_INDEX_URL', 'https://pypi.tuna.tsinghua.edu.cn/simple'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/home/sd-robot/Radar_ws/install/raf_interfaces/lib:/home/sd-robot/Radar_ws/install/oden_interfaces/lib:/home/sd-robot/Radar_ws/install/liboden/lib:/home/sd-robot/Radar_ws/install/arbe_raf/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib/server'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sd-robot'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sd-robot/hql_test/hit_Qt/build'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install:/home/sd-robot/Radar_ws/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:/home/linuxbrew/.linuxbrew/Homebrew/share/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sd-robot'), ('LIBPATH', ':/opt/MonitorSoftware/lib'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '155'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/sd-robot/.local/bin:/opt/ros/humble/bin:/home/sd-robot/anaconda3/condabin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/Homebrew/bin:/home/linuxbrew/.linuxbrew/Homebrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sd-robot/.fishros/bin/'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/sd-robot/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('SHLIB_PATH', ':/opt/MonitorSoftware/lib'), ('GST_PLUGIN_PATH', '/usr/local/lib:/usr/lib/x86_64-linux-gnu/gstreamer-1.0'), ('HOMEBREW_API_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu'), ('HOMEBREW_BOTTLE_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/sd-robot/anaconda3/bin/conda'), ('SSH_CONNECTION', '192.168.1.35 49953 192.168.1.117 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sd-robot/Radar_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Radar_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('LC_NUMERIC', 'en_US.UTF-8'), ('TZ', 'Asia/Shanghai'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', '/home/linuxbrew/.linuxbrew/share/man:/home/linuxbrew/.linuxbrew/Homebrew/share/man::'), ('CMAKE_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[2.176549] (hit_menu) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC for target hit_menu\x1b[0m\n'}
+[2.202766] (-) TimerEvent: {}
+[2.303181] (-) TimerEvent: {}
+[2.403900] (-) TimerEvent: {}
+[2.504218] (-) TimerEvent: {}
+[2.604521] (-) TimerEvent: {}
+[2.704839] (-) TimerEvent: {}
+[2.805168] (-) TimerEvent: {}
+[2.905385] (-) TimerEvent: {}
+[3.005688] (-) TimerEvent: {}
+[3.105987] (-) TimerEvent: {}
+[3.206325] (-) TimerEvent: {}
+[3.306545] (-) TimerEvent: {}
+[3.406808] (-) TimerEvent: {}
+[3.507114] (-) TimerEvent: {}
+[3.607546] (-) TimerEvent: {}
+[3.707859] (-) TimerEvent: {}
+[3.808317] (-) TimerEvent: {}
+[3.909098] (-) TimerEvent: {}
+[4.009887] (-) TimerEvent: {}
+[4.110829] (-) TimerEvent: {}
+[4.211836] (-) TimerEvent: {}
+[4.312861] (-) TimerEvent: {}
+[4.413799] (-) TimerEvent: {}
+[4.514903] (-) TimerEvent: {}
+[4.615987] (-) TimerEvent: {}
+[4.716997] (-) TimerEvent: {}
+[4.818078] (-) TimerEvent: {}
+[4.919083] (-) TimerEvent: {}
+[5.020079] (-) TimerEvent: {}
+[5.121098] (-) TimerEvent: {}
+[5.222095] (-) TimerEvent: {}
+[5.323244] (-) TimerEvent: {}
+[5.424281] (-) TimerEvent: {}
+[5.525326] (-) TimerEvent: {}
+[5.626340] (-) TimerEvent: {}
+[5.727352] (-) TimerEvent: {}
+[5.828375] (-) TimerEvent: {}
+[5.929386] (-) TimerEvent: {}
+[6.030393] (-) TimerEvent: {}
+[6.131637] (-) TimerEvent: {}
+[6.232645] (-) TimerEvent: {}
+[6.333576] (-) TimerEvent: {}
+[6.434564] (-) TimerEvent: {}
+[6.535577] (-) TimerEvent: {}
+[6.636578] (-) TimerEvent: {}
+[6.737535] (-) TimerEvent: {}
+[6.838481] (-) TimerEvent: {}
+[6.939696] (-) TimerEvent: {}
+[7.040654] (-) TimerEvent: {}
+[7.141558] (-) TimerEvent: {}
+[7.242504] (-) TimerEvent: {}
+[7.343491] (-) TimerEvent: {}
+[7.444449] (-) TimerEvent: {}
+[7.545413] (-) TimerEvent: {}
+[7.646387] (-) TimerEvent: {}
+[7.747333] (-) TimerEvent: {}
+[7.848461] (-) TimerEvent: {}
+[7.949130] (-) TimerEvent: {}
+[8.049942] (-) TimerEvent: {}
+[8.150831] (-) TimerEvent: {}
+[8.251618] (-) TimerEvent: {}
+[8.352279] (-) TimerEvent: {}
+[8.452711] (-) TimerEvent: {}
+[8.553020] (-) TimerEvent: {}
+[8.588945] (hit_menu) StdoutLine: {'line': b'[  7%] Built target hit_menu_autogen\n'}
+[8.594021] (hit_menu) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mAutomatic RCC for resources.qrc\x1b[0m\n'}
+[8.610249] (hit_menu) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/resizableitem.cpp.o\x1b[0m\n'}
+[8.610665] (hit_menu) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/lidarWidget.cpp.o\x1b[0m\n'}
+[8.610766] (hit_menu) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/hit_menu_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[8.610793] (hit_menu) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/point_cloud_subscriber.cpp.o\x1b[0m\n'}
+[8.610818] (hit_menu) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/main.cpp.o\x1b[0m\n'}
+[8.610842] (hit_menu) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o\x1b[0m\n'}
+[8.610864] (hit_menu) StdoutLine: {'line': b'[ 69%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/mainWidget.cpp.o\x1b[0m\n'}
+[8.612066] (hit_menu) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/sysSettingWidget.cpp.o\x1b[0m\n'}
+[8.612172] (hit_menu) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/sysLogWidegt.cpp.o\x1b[0m\n'}
+[8.612248] (hit_menu) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/hit_menu_autogen/EWIEGA46WW/qrc_resources.cpp.o\x1b[0m\n'}
+[8.653236] (-) TimerEvent: {}
+[8.753757] (-) TimerEvent: {}
+[8.794430] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/moc_cameraWidget.cpp:10\x1b[m\x1b[K,\n'}
+[8.794766] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/mocs_compilation.cpp:2\x1b[m\x1b[K:\n'}
+[8.794824] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/../../../../src/hit_Qt/src/cameraWidget.h:17:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KhitRosThread.h: No such file or directory\n'}
+[8.794879] (hit_menu) StderrLine: {'line': b'   17 | #include \x1b[01;31m\x1b[K"hitRosThread.h"\x1b[m\x1b[K\n'}
+[8.794928] (hit_menu) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.794974] (hit_menu) StderrLine: {'line': b'compilation terminated.\n'}
+[8.795489] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:1\x1b[m\x1b[K:\n'}
+[8.795569] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:17:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KhitRosThread.h: No such file or directory\n'}
+[8.795627] (hit_menu) StderrLine: {'line': b'   17 | #include \x1b[01;31m\x1b[K"hitRosThread.h"\x1b[m\x1b[K\n'}
+[8.795681] (hit_menu) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.795729] (hit_menu) StderrLine: {'line': b'compilation terminated.\n'}
+[8.797112] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.h:4\x1b[m\x1b[K,\n'}
+[8.797217] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.cpp:1\x1b[m\x1b[K:\n'}
+[8.797268] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:17:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KhitRosThread.h: No such file or directory\n'}
+[8.797341] (hit_menu) StderrLine: {'line': b'   17 | #include \x1b[01;31m\x1b[K"hitRosThread.h"\x1b[m\x1b[K\n'}
+[8.797388] (hit_menu) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.797435] (hit_menu) StderrLine: {'line': b'compilation terminated.\n'}
+[8.803563] (hit_menu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:97: CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o] Error 1\n'}
+[8.803920] (hit_menu) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[8.803977] (hit_menu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:83: CMakeFiles/hit_menu.dir/hit_menu_autogen/mocs_compilation.cpp.o] Error 1\n'}
+[8.804030] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.h:4\x1b[m\x1b[K,\n'}
+[8.804079] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[8.804149] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:17:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[KhitRosThread.h: No such file or directory\n'}
+[8.804200] (hit_menu) StderrLine: {'line': b'   17 | #include \x1b[01;31m\x1b[K"hitRosThread.h"\x1b[m\x1b[K\n'}
+[8.804247] (hit_menu) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[8.804294] (hit_menu) StderrLine: {'line': b'compilation terminated.\n'}
+[8.804352] (hit_menu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:139: CMakeFiles/hit_menu.dir/src/mainWidget.cpp.o] Error 1\n'}
+[8.807414] (hit_menu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:125: CMakeFiles/hit_menu.dir/src/main.cpp.o] Error 1\n'}
+[8.853872] (-) TimerEvent: {}
+[8.954353] (-) TimerEvent: {}
+[9.054850] (-) TimerEvent: {}
+[9.155370] (-) TimerEvent: {}
+[9.255777] (-) TimerEvent: {}
+[9.356073] (-) TimerEvent: {}
+[9.456406] (-) TimerEvent: {}
+[9.556757] (-) TimerEvent: {}
+[9.657109] (-) TimerEvent: {}
+[9.757468] (-) TimerEvent: {}
+[9.857786] (-) TimerEvent: {}
+[9.958105] (-) TimerEvent: {}
+[10.058455] (-) TimerEvent: {}
+[10.158746] (-) TimerEvent: {}
+[10.259088] (-) TimerEvent: {}
+[10.359430] (-) TimerEvent: {}
+[10.459725] (-) TimerEvent: {}
+[10.560016] (-) TimerEvent: {}
+[10.660311] (-) TimerEvent: {}
+[10.760610] (-) TimerEvent: {}
+[10.860908] (-) TimerEvent: {}
+[10.961226] (-) TimerEvent: {}
+[11.061514] (-) TimerEvent: {}
+[11.161799] (-) TimerEvent: {}
+[11.262079] (-) TimerEvent: {}
+[11.362360] (-) TimerEvent: {}
+[11.462644] (-) TimerEvent: {}
+[11.562938] (-) TimerEvent: {}
+[11.663231] (-) TimerEvent: {}
+[11.763523] (-) TimerEvent: {}
+[11.863829] (-) TimerEvent: {}
+[11.964101] (-) TimerEvent: {}
+[12.064434] (-) TimerEvent: {}
+[12.164744] (-) TimerEvent: {}
+[12.265096] (-) TimerEvent: {}
+[12.365411] (-) TimerEvent: {}
+[12.465687] (-) TimerEvent: {}
+[12.566006] (-) TimerEvent: {}
+[12.666341] (-) TimerEvent: {}
+[12.766662] (-) TimerEvent: {}
+[12.866987] (-) TimerEvent: {}
+[12.967267] (-) TimerEvent: {}
+[13.067556] (-) TimerEvent: {}
+[13.167842] (-) TimerEvent: {}
+[13.268115] (-) TimerEvent: {}
+[13.368406] (-) TimerEvent: {}
+[13.468752] (-) TimerEvent: {}
+[13.569055] (-) TimerEvent: {}
+[13.669374] (-) TimerEvent: {}
+[13.769744] (-) TimerEvent: {}
+[13.870114] (-) TimerEvent: {}
+[13.970457] (-) TimerEvent: {}
+[14.070841] (-) TimerEvent: {}
+[14.171250] (-) TimerEvent: {}
+[14.271595] (-) TimerEvent: {}
+[14.371950] (-) TimerEvent: {}
+[14.472366] (-) TimerEvent: {}
+[14.572714] (-) TimerEvent: {}
+[14.673086] (-) TimerEvent: {}
+[14.773406] (-) TimerEvent: {}
+[14.873733] (-) TimerEvent: {}
+[14.974121] (-) TimerEvent: {}
+[15.074422] (-) TimerEvent: {}
+[15.174738] (-) TimerEvent: {}
+[15.275060] (-) TimerEvent: {}
+[15.375363] (-) TimerEvent: {}
+[15.475672] (-) TimerEvent: {}
+[15.576030] (-) TimerEvent: {}
+[15.676399] (-) TimerEvent: {}
+[15.776707] (-) TimerEvent: {}
+[15.877070] (-) TimerEvent: {}
+[15.977395] (-) TimerEvent: {}
+[16.077676] (-) TimerEvent: {}
+[16.177999] (-) TimerEvent: {}
+[16.278321] (-) TimerEvent: {}
+[16.378688] (-) TimerEvent: {}
+[16.479062] (-) TimerEvent: {}
+[16.579418] (-) TimerEvent: {}
+[16.679804] (-) TimerEvent: {}
+[16.780107] (-) TimerEvent: {}
+[16.880481] (-) TimerEvent: {}
+[16.980851] (-) TimerEvent: {}
+[17.081149] (-) TimerEvent: {}
+[17.181427] (-) TimerEvent: {}
+[17.281690] (-) TimerEvent: {}
+[17.381955] (-) TimerEvent: {}
+[17.482279] (-) TimerEvent: {}
+[17.582596] (-) TimerEvent: {}
+[17.611474] (hit_menu) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/hit_menu.dir/all] Error 2\n'}
+[17.611640] (hit_menu) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[17.612957] (hit_menu) CommandEnded: {'returncode': 2}
+[17.642764] (hit_menu) JobEnded: {'identifier': 'hit_menu', 'rc': 2}
+[17.652993] (-) EventReactorShutdown: {}

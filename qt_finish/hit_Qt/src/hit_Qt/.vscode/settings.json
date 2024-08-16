@@ -1,0 +1,19 @@
+{
+    "files.associations": {
+        "qdoublespinbox": "cpp",
+        "qgraphicsscene": "cpp",
+        "qlineedit": "cpp",
+        "qgraphicsview": "cpp",
+        "qpushbutton": "cpp",
+        "qhboxlayout": "cpp",
+        "qvboxlayout": "cpp",
+        "qmessagebox": "cpp",
+        "qdebug": "cpp",
+        "qwidget": "cpp",
+        "iterator": "cpp",
+        "qcombobox": "cpp",
+        "sstream": "cpp",
+        "string": "cpp",
+        "vector": "cpp"
+    }
+}

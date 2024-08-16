@@ -1,0 +1,214 @@
+[0.000000] (-) TimerEvent: {}
+[0.000303] (hit_menu) JobQueued: {'identifier': 'hit_menu', 'dependencies': OrderedDict()}
+[0.000319] (hit_menu) JobStarted: {'identifier': 'hit_menu'}
+[0.003861] (hit_menu) JobProgress: {'identifier': 'hit_menu', 'progress': 'cmake'}
+[0.004221] (hit_menu) JobProgress: {'identifier': 'hit_menu', 'progress': 'build'}
+[0.004553] (hit_menu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu', '--', '-j24', '-l24'], 'cwd': '/home/sd-robot/hql_test/hit_Qt/build/hit_menu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'sd-robot'), ('SSH_CLIENT', '192.168.1.35 49953 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('HOMEBREW_PIP_INDEX_URL', 'https://pypi.tuna.tsinghua.edu.cn/simple'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/home/sd-robot/Radar_ws/install/raf_interfaces/lib:/home/sd-robot/Radar_ws/install/oden_interfaces/lib:/home/sd-robot/Radar_ws/install/liboden/lib:/home/sd-robot/Radar_ws/install/arbe_raf/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib/server'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sd-robot'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sd-robot/hql_test/hit_Qt/build'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install:/home/sd-robot/Radar_ws/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:/home/linuxbrew/.linuxbrew/Homebrew/share/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sd-robot'), ('LIBPATH', ':/opt/MonitorSoftware/lib'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '155'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/sd-robot/.local/bin:/opt/ros/humble/bin:/home/sd-robot/anaconda3/condabin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/Homebrew/bin:/home/linuxbrew/.linuxbrew/Homebrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sd-robot/.fishros/bin/'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/sd-robot/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('SHLIB_PATH', ':/opt/MonitorSoftware/lib'), ('GST_PLUGIN_PATH', '/usr/local/lib:/usr/lib/x86_64-linux-gnu/gstreamer-1.0'), ('HOMEBREW_API_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu'), ('HOMEBREW_BOTTLE_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/sd-robot/anaconda3/bin/conda'), ('SSH_CONNECTION', '192.168.1.35 49953 192.168.1.117 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sd-robot/Radar_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Radar_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('LC_NUMERIC', 'en_US.UTF-8'), ('TZ', 'Asia/Shanghai'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', '/home/linuxbrew/.linuxbrew/share/man:/home/linuxbrew/.linuxbrew/Homebrew/share/man::'), ('CMAKE_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.029489] (hit_menu) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC for target hit_menu\x1b[0m\n'}
+[0.099664] (-) TimerEvent: {}
+[0.199970] (-) TimerEvent: {}
+[0.300258] (-) TimerEvent: {}
+[0.400431] (-) TimerEvent: {}
+[0.500762] (-) TimerEvent: {}
+[0.601154] (-) TimerEvent: {}
+[0.701472] (-) TimerEvent: {}
+[0.801803] (-) TimerEvent: {}
+[0.902120] (-) TimerEvent: {}
+[1.002432] (-) TimerEvent: {}
+[1.102732] (-) TimerEvent: {}
+[1.203040] (-) TimerEvent: {}
+[1.303340] (-) TimerEvent: {}
+[1.403557] (-) TimerEvent: {}
+[1.503880] (-) TimerEvent: {}
+[1.604196] (-) TimerEvent: {}
+[1.704643] (-) TimerEvent: {}
+[1.805288] (-) TimerEvent: {}
+[1.905870] (-) TimerEvent: {}
+[2.006428] (-) TimerEvent: {}
+[2.106981] (-) TimerEvent: {}
+[2.207614] (-) TimerEvent: {}
+[2.308299] (-) TimerEvent: {}
+[2.408899] (-) TimerEvent: {}
+[2.509353] (-) TimerEvent: {}
+[2.609682] (-) TimerEvent: {}
+[2.709980] (-) TimerEvent: {}
+[2.810283] (-) TimerEvent: {}
+[2.825641] (hit_menu) StdoutLine: {'line': b'[  7%] Built target hit_menu_autogen\n'}
+[2.833694] (hit_menu) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hit_menu\x1b[0m\n'}
+[2.853687] (hit_menu) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o\x1b[0m\n'}
+[2.853876] (hit_menu) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/hit_menu_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[2.856119] (hit_menu) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/main.cpp.o\x1b[0m\n'}
+[2.856211] (hit_menu) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/mainWidget.cpp.o\x1b[0m\n'}
+[2.910439] (-) TimerEvent: {}
+[3.010686] (-) TimerEvent: {}
+[3.110997] (-) TimerEvent: {}
+[3.211307] (-) TimerEvent: {}
+[3.311786] (-) TimerEvent: {}
+[3.412246] (-) TimerEvent: {}
+[3.512564] (-) TimerEvent: {}
+[3.612925] (-) TimerEvent: {}
+[3.713249] (-) TimerEvent: {}
+[3.813606] (-) TimerEvent: {}
+[3.913841] (-) TimerEvent: {}
+[4.014136] (-) TimerEvent: {}
+[4.114545] (-) TimerEvent: {}
+[4.215118] (-) TimerEvent: {}
+[4.315457] (-) TimerEvent: {}
+[4.415919] (-) TimerEvent: {}
+[4.516390] (-) TimerEvent: {}
+[4.617009] (-) TimerEvent: {}
+[4.717506] (-) TimerEvent: {}
+[4.771173] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:1\x1b[m\x1b[K:\n'}
+[4.771407] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.771473] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>::SharedPtr json_publisher_;\n'}
+[4.771526] (hit_menu) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.771572] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.771617] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr json_publisher_;\n'}
+[4.771661] (hit_menu) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[4.771703] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[4.771740] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K json_publisher_;\n'}
+[4.771777] (hit_menu) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[4.771816] (hit_menu) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[4.773293] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjson_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.773470] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Kjson_publisher_\x1b[m\x1b[K;\n'}
+[4.773521] (hit_menu) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.773561] (hit_menu) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[4.817612] (-) TimerEvent: {}
+[4.827722] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid cameraWidget::initRosPublish()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.827958] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:110:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjson_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.828014] (hit_menu) StderrLine: {'line': b'  110 |     \x1b[01;31m\x1b[Kjson_publisher_\x1b[m\x1b[K = ros_node_->create_publisher<std_msgs::msg::String>("json_topic", 10);\n'}
+[4.828060] (hit_menu) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.828101] (hit_menu) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[4.832481] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:110:51:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.832668] (hit_menu) StderrLine: {'line': b'  110 |     json_publisher_ = ros_node_->create_publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>("json_topic", 10);\n'}
+[4.832724] (hit_menu) StderrLine: {'line': b'      |                                                   \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.832777] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:110:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[4.832822] (hit_menu) StderrLine: {'line': b'  110 |     json_publisher_ = ros_node_->\x1b[01;31m\x1b[Kcreate_publisher<std_msgs::msg::String>\x1b[m\x1b[K("json_topic", 10);\n'}
+[4.832862] (hit_menu) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.832901] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:110:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Node::create_publisher<<expression error> >(const char [11], int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.832955] (hit_menu) StderrLine: {'line': b'  110 |     json_publisher_ = \x1b[01;31m\x1b[Kros_node_->create_publisher<std_msgs::msg::String>("json_topic", 10)\x1b[m\x1b[K;\n'}
+[4.832998] (hit_menu) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.833037] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[4.833076] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[4.833119] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[4.833158] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:15\x1b[m\x1b[K,\n'}
+[4.833196] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:1\x1b[m\x1b[K:\n'}
+[4.833236] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[4.833281] (hit_menu) StderrLine: {'line': b'  195 |   \x1b[01;36m\x1b[Kcreate_publisher\x1b[m\x1b[K(\n'}
+[4.833319] (hit_menu) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.833357] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:195:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[4.833396] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:110:73:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[4.833433] (hit_menu) StderrLine: {'line': b'  110 |     json_publisher_ = \x1b[01;31m\x1b[Kros_node_->create_publisher<std_msgs::msg::String>("json_topic", 10)\x1b[m\x1b[K;\n'}
+[4.833471] (hit_menu) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.839913] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid cameraWidget::saveConfiguration()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.840157] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:214:20:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 has not been declared\n'}
+[4.840214] (hit_menu) StderrLine: {'line': b'  214 |     auto message = \x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String();\n'}
+[4.840259] (hit_menu) StderrLine: {'line': b'      |                    \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[4.846270] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.cpp:216:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjson_publisher_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[4.846418] (hit_menu) StderrLine: {'line': b'  216 |     \x1b[01;31m\x1b[Kjson_publisher_\x1b[m\x1b[K->publish(message);\n'}
+[4.846465] (hit_menu) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.846505] (hit_menu) StderrLine: {'line': b'      |     \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[4.917730] (-) TimerEvent: {}
+[5.018152] (-) TimerEvent: {}
+[5.118520] (-) TimerEvent: {}
+[5.208607] (hit_menu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:97: CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o] Error 1\n'}
+[5.208833] (hit_menu) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[5.218626] (-) TimerEvent: {}
+[5.318904] (-) TimerEvent: {}
+[5.419250] (-) TimerEvent: {}
+[5.519581] (-) TimerEvent: {}
+[5.619970] (-) TimerEvent: {}
+[5.720289] (-) TimerEvent: {}
+[5.820665] (-) TimerEvent: {}
+[5.921136] (-) TimerEvent: {}
+[6.021518] (-) TimerEvent: {}
+[6.121879] (-) TimerEvent: {}
+[6.157751] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.h:4\x1b[m\x1b[K,\n'}
+[6.157966] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.cpp:1\x1b[m\x1b[K:\n'}
+[6.158017] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.158074] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>::SharedPtr json_publisher_;\n'}
+[6.158111] (hit_menu) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.158149] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.158188] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr json_publisher_;\n'}
+[6.158226] (hit_menu) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.158263] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[6.158304] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K json_publisher_;\n'}
+[6.158347] (hit_menu) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.158385] (hit_menu) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.160071] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/moc_cameraWidget.cpp:10\x1b[m\x1b[K,\n'}
+[6.160202] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/mocs_compilation.cpp:2\x1b[m\x1b[K:\n'}
+[6.160238] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/../../../../src/hit_Qt/src/cameraWidget.h:46:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.160271] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>::SharedPtr json_publisher_;\n'}
+[6.160300] (hit_menu) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.160335] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/../../../../src/hit_Qt/src/cameraWidget.h:46:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.160366] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr json_publisher_;\n'}
+[6.160397] (hit_menu) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.160429] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/../../../../src/hit_Qt/src/cameraWidget.h:46:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[6.160464] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K json_publisher_;\n'}
+[6.160496] (hit_menu) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.160528] (hit_menu) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.164987] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjson_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.165137] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Kjson_publisher_\x1b[m\x1b[K;\n'}
+[6.165177] (hit_menu) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.165211] (hit_menu) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[6.167226] (hit_menu) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/mainWidget.h:4\x1b[m\x1b[K,\n'}
+[6.167373] (hit_menu) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/main.cpp:1\x1b[m\x1b[K:\n'}
+[6.167408] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstd_msgs\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[6.167440] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<\x1b[01;31m\x1b[Kstd_msgs\x1b[m\x1b[K::msg::String>::SharedPtr json_publisher_;\n'}
+[6.167469] (hit_menu) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[6.167500] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:44:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[6.167534] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String\x1b[01;31m\x1b[K>\x1b[m\x1b[K::SharedPtr json_publisher_;\n'}
+[6.167566] (hit_menu) StderrLine: {'line': b'      |                                            \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[6.167598] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/build/hit_menu/hit_menu_autogen/UVLADIE3JM/../../../../src/hit_Qt/src/cameraWidget.h:46:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjson_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.167633] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Kjson_publisher_\x1b[m\x1b[K;\n'}
+[6.167666] (hit_menu) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.167699] (hit_menu) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[6.167731] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:47:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 at end of member declaration\n'}
+[6.167763] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String>::\x1b[01;31m\x1b[KSharedPtr\x1b[m\x1b[K json_publisher_;\n'}
+[6.167802] (hit_menu) StderrLine: {'line': b'      |                                               \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[6.167834] (hit_menu) StderrLine: {'line': b'      |                                                        \x1b[32m\x1b[K;\x1b[m\x1b[K\n'}
+[6.174921] (hit_menu) StderrLine: {'line': b'\x1b[01m\x1b[K/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/src/cameraWidget.h:46:57:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kjson_publisher_\x1b[m\x1b[K\xe2\x80\x99 does not name a type; did you mean \xe2\x80\x98\x1b[01m\x1b[Krmw_publisher_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.175106] (hit_menu) StderrLine: {'line': b'   46 |     rclcpp::Publisher<std_msgs::msg::String>::SharedPtr \x1b[01;31m\x1b[Kjson_publisher_\x1b[m\x1b[K;\n'}
+[6.175159] (hit_menu) StderrLine: {'line': b'      |                                                         \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.175213] (hit_menu) StderrLine: {'line': b'      |                                                         \x1b[32m\x1b[Krmw_publisher_t\x1b[m\x1b[K\n'}
+[6.221998] (-) TimerEvent: {}
+[6.322384] (-) TimerEvent: {}
+[6.422681] (-) TimerEvent: {}
+[6.523007] (-) TimerEvent: {}
+[6.623313] (-) TimerEvent: {}
+[6.723703] (-) TimerEvent: {}
+[6.824048] (-) TimerEvent: {}
+[6.924383] (-) TimerEvent: {}
+[7.024700] (-) TimerEvent: {}
+[7.125026] (-) TimerEvent: {}
+[7.225435] (-) TimerEvent: {}
+[7.325858] (-) TimerEvent: {}
+[7.426221] (-) TimerEvent: {}
+[7.526596] (-) TimerEvent: {}
+[7.626949] (-) TimerEvent: {}
+[7.727321] (-) TimerEvent: {}
+[7.827696] (-) TimerEvent: {}
+[7.928058] (-) TimerEvent: {}
+[8.028464] (-) TimerEvent: {}
+[8.128811] (-) TimerEvent: {}
+[8.229058] (-) TimerEvent: {}
+[8.329223] (-) TimerEvent: {}
+[8.429497] (-) TimerEvent: {}
+[8.529884] (-) TimerEvent: {}
+[8.630261] (-) TimerEvent: {}
+[8.730690] (-) TimerEvent: {}
+[8.831220] (-) TimerEvent: {}
+[8.931694] (-) TimerEvent: {}
+[9.032091] (-) TimerEvent: {}
+[9.132600] (-) TimerEvent: {}
+[9.232999] (-) TimerEvent: {}
+[9.333422] (-) TimerEvent: {}
+[9.433917] (-) TimerEvent: {}
+[9.438889] (hit_menu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:139: CMakeFiles/hit_menu.dir/src/mainWidget.cpp.o] Error 1\n'}
+[9.461885] (hit_menu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:83: CMakeFiles/hit_menu.dir/hit_menu_autogen/mocs_compilation.cpp.o] Error 1\n'}
+[9.464743] (hit_menu) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hit_menu.dir/build.make:125: CMakeFiles/hit_menu.dir/src/main.cpp.o] Error 1\n'}
+[9.465115] (hit_menu) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:138: CMakeFiles/hit_menu.dir/all] Error 2\n'}
+[9.465277] (hit_menu) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.466548] (hit_menu) CommandEnded: {'returncode': 2}
+[9.491365] (hit_menu) JobEnded: {'identifier': 'hit_menu', 'rc': 2}
+[9.501559] (-) EventReactorShutdown: {}

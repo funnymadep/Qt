@@ -1,0 +1,161 @@
+[0.000000] (-) TimerEvent: {}
+[0.000118] (hit_menu) JobQueued: {'identifier': 'hit_menu', 'dependencies': OrderedDict()}
+[0.000215] (hit_menu) JobStarted: {'identifier': 'hit_menu'}
+[0.004250] (hit_menu) JobProgress: {'identifier': 'hit_menu', 'progress': 'cmake'}
+[0.004629] (hit_menu) JobProgress: {'identifier': 'hit_menu', 'progress': 'build'}
+[0.005034] (hit_menu) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu', '--', '-j24', '-l24'], 'cwd': '/home/sd-robot/hql_test/hit_Qt/build/hit_menu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'sd-robot'), ('SSH_CLIENT', '192.168.1.35 49953 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('HOMEBREW_PIP_INDEX_URL', 'https://pypi.tuna.tsinghua.edu.cn/simple'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/home/sd-robot/Radar_ws/install/raf_interfaces/lib:/home/sd-robot/Radar_ws/install/oden_interfaces/lib:/home/sd-robot/Radar_ws/install/liboden/lib:/home/sd-robot/Radar_ws/install/arbe_raf/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib/server'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sd-robot'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sd-robot/hql_test/hit_Qt/build'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install:/home/sd-robot/Radar_ws/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:/home/linuxbrew/.linuxbrew/Homebrew/share/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sd-robot'), ('LIBPATH', ':/opt/MonitorSoftware/lib'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '155'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/sd-robot/.local/bin:/opt/ros/humble/bin:/home/sd-robot/anaconda3/condabin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/Homebrew/bin:/home/linuxbrew/.linuxbrew/Homebrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sd-robot/.fishros/bin/'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/sd-robot/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('SHLIB_PATH', ':/opt/MonitorSoftware/lib'), ('GST_PLUGIN_PATH', '/usr/local/lib:/usr/lib/x86_64-linux-gnu/gstreamer-1.0'), ('HOMEBREW_API_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu'), ('HOMEBREW_BOTTLE_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/sd-robot/anaconda3/bin/conda'), ('SSH_CONNECTION', '192.168.1.35 49953 192.168.1.117 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sd-robot/Radar_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Radar_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('LC_NUMERIC', 'en_US.UTF-8'), ('TZ', 'Asia/Shanghai'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', '/home/linuxbrew/.linuxbrew/share/man:/home/linuxbrew/.linuxbrew/Homebrew/share/man::'), ('CMAKE_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[0.028655] (hit_menu) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mAutomatic MOC for target hit_menu\x1b[0m\n'}
+[0.099982] (-) TimerEvent: {}
+[0.200179] (-) TimerEvent: {}
+[0.300286] (-) TimerEvent: {}
+[0.400415] (-) TimerEvent: {}
+[0.500641] (-) TimerEvent: {}
+[0.600948] (-) TimerEvent: {}
+[0.701175] (-) TimerEvent: {}
+[0.801275] (-) TimerEvent: {}
+[0.901378] (-) TimerEvent: {}
+[1.001513] (-) TimerEvent: {}
+[1.101689] (-) TimerEvent: {}
+[1.201793] (-) TimerEvent: {}
+[1.301894] (-) TimerEvent: {}
+[1.402087] (-) TimerEvent: {}
+[1.502360] (-) TimerEvent: {}
+[1.602612] (-) TimerEvent: {}
+[1.702953] (-) TimerEvent: {}
+[1.803545] (-) TimerEvent: {}
+[1.904049] (-) TimerEvent: {}
+[2.004428] (-) TimerEvent: {}
+[2.104651] (-) TimerEvent: {}
+[2.204833] (-) TimerEvent: {}
+[2.305138] (-) TimerEvent: {}
+[2.405566] (-) TimerEvent: {}
+[2.505898] (-) TimerEvent: {}
+[2.606185] (-) TimerEvent: {}
+[2.706387] (-) TimerEvent: {}
+[2.745685] (hit_menu) StdoutLine: {'line': b'[  7%] Built target hit_menu_autogen\n'}
+[2.759794] (hit_menu) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target hit_menu\x1b[0m\n'}
+[2.796511] (hit_menu) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/hit_menu_autogen/mocs_compilation.cpp.o\x1b[0m\n'}
+[2.796629] (hit_menu) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/cameraWidget.cpp.o\x1b[0m\n'}
+[2.797558] (hit_menu) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/main.cpp.o\x1b[0m\n'}
+[2.798634] (hit_menu) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/hit_menu.dir/src/mainWidget.cpp.o\x1b[0m\n'}
+[2.806542] (-) TimerEvent: {}
+[2.906845] (-) TimerEvent: {}
+[3.007201] (-) TimerEvent: {}
+[3.107739] (-) TimerEvent: {}
+[3.208328] (-) TimerEvent: {}
+[3.308995] (-) TimerEvent: {}
+[3.409272] (-) TimerEvent: {}
+[3.509489] (-) TimerEvent: {}
+[3.609859] (-) TimerEvent: {}
+[3.710362] (-) TimerEvent: {}
+[3.810825] (-) TimerEvent: {}
+[3.911195] (-) TimerEvent: {}
+[4.011523] (-) TimerEvent: {}
+[4.111790] (-) TimerEvent: {}
+[4.212002] (-) TimerEvent: {}
+[4.312253] (-) TimerEvent: {}
+[4.412496] (-) TimerEvent: {}
+[4.512829] (-) TimerEvent: {}
+[4.613341] (-) TimerEvent: {}
+[4.713680] (-) TimerEvent: {}
+[4.813917] (-) TimerEvent: {}
+[4.914206] (-) TimerEvent: {}
+[5.014544] (-) TimerEvent: {}
+[5.114860] (-) TimerEvent: {}
+[5.215127] (-) TimerEvent: {}
+[5.315338] (-) TimerEvent: {}
+[5.415578] (-) TimerEvent: {}
+[5.515807] (-) TimerEvent: {}
+[5.616145] (-) TimerEvent: {}
+[5.716484] (-) TimerEvent: {}
+[5.816784] (-) TimerEvent: {}
+[5.917169] (-) TimerEvent: {}
+[6.017522] (-) TimerEvent: {}
+[6.117944] (-) TimerEvent: {}
+[6.218150] (-) TimerEvent: {}
+[6.318400] (-) TimerEvent: {}
+[6.418635] (-) TimerEvent: {}
+[6.518849] (-) TimerEvent: {}
+[6.619074] (-) TimerEvent: {}
+[6.719266] (-) TimerEvent: {}
+[6.819454] (-) TimerEvent: {}
+[6.919648] (-) TimerEvent: {}
+[7.019885] (-) TimerEvent: {}
+[7.120162] (-) TimerEvent: {}
+[7.220429] (-) TimerEvent: {}
+[7.320665] (-) TimerEvent: {}
+[7.420866] (-) TimerEvent: {}
+[7.521112] (-) TimerEvent: {}
+[7.621423] (-) TimerEvent: {}
+[7.721677] (-) TimerEvent: {}
+[7.821950] (-) TimerEvent: {}
+[7.922217] (-) TimerEvent: {}
+[8.022485] (-) TimerEvent: {}
+[8.122773] (-) TimerEvent: {}
+[8.222963] (-) TimerEvent: {}
+[8.323133] (-) TimerEvent: {}
+[8.423307] (-) TimerEvent: {}
+[8.523544] (-) TimerEvent: {}
+[8.623822] (-) TimerEvent: {}
+[8.724075] (-) TimerEvent: {}
+[8.824339] (-) TimerEvent: {}
+[8.924644] (-) TimerEvent: {}
+[9.024924] (-) TimerEvent: {}
+[9.125215] (-) TimerEvent: {}
+[9.225497] (-) TimerEvent: {}
+[9.325887] (-) TimerEvent: {}
+[9.426296] (-) TimerEvent: {}
+[9.526492] (-) TimerEvent: {}
+[9.626766] (-) TimerEvent: {}
+[9.727077] (-) TimerEvent: {}
+[9.788524] (hit_menu) StdoutLine: {'line': b'[ 42%] \x1b[32m\x1b[1mLinking CXX executable hit_menu\x1b[0m\n'}
+[9.827266] (-) TimerEvent: {}
+[9.927616] (-) TimerEvent: {}
+[10.027990] (-) TimerEvent: {}
+[10.128481] (-) TimerEvent: {}
+[10.228930] (-) TimerEvent: {}
+[10.329265] (-) TimerEvent: {}
+[10.335608] (hit_menu) StdoutLine: {'line': b'[100%] Built target hit_menu\n'}
+[10.340984] (hit_menu) CommandEnded: {'returncode': 0}
+[10.362002] (hit_menu) JobProgress: {'identifier': 'hit_menu', 'progress': 'install'}
+[10.365681] (hit_menu) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu'], 'cwd': '/home/sd-robot/hql_test/hit_Qt/build/hit_menu', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en'), ('USER', 'sd-robot'), ('SSH_CLIENT', '192.168.1.35 49953 22'), ('LC_TIME', 'en_US.UTF-8'), ('XDG_SESSION_TYPE', 'tty'), ('HOMEBREW_PIP_INDEX_URL', 'https://pypi.tuna.tsinghua.edu.cn/simple'), ('ALLUSERSPROFILE', '/opt/MVS/MVFG'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/MVS/lib/64:/opt/MVS/lib/32:/home/sd-robot/Radar_ws/install/raf_interfaces/lib:/home/sd-robot/Radar_ws/install/oden_interfaces/lib:/home/sd-robot/Radar_ws/install/liboden/lib:/home/sd-robot/Radar_ws/install/arbe_raf/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/lib:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/local/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib:/usr/lib/jvm/java-17-openjdk-amd64/lib/server'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/sd-robot'), ('CONDA_SHLVL', '0'), ('OLDPWD', '/home/sd-robot/hql_test/hit_Qt/build'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('HOMEBREW_PREFIX', '/home/linuxbrew/.linuxbrew'), ('LC_MONETARY', 'en_US.UTF-8'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('_CE_M', ''), ('COLCON_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install:/home/sd-robot/Radar_ws/install'), ('INFOPATH', '/home/linuxbrew/.linuxbrew/share/info:/home/linuxbrew/.linuxbrew/Homebrew/share/info:'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'sd-robot'), ('LIBPATH', ':/opt/MonitorSoftware/lib'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm'), ('XDG_SESSION_ID', '155'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('MVCAM_SDK_PATH', '/opt/MVS'), ('PATH', '/home/sd-robot/.local/bin:/opt/ros/humble/bin:/home/sd-robot/anaconda3/condabin:/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin:/home/linuxbrew/.linuxbrew/Homebrew/bin:/home/linuxbrew/.linuxbrew/Homebrew/sbin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/sd-robot/.fishros/bin/'), ('MVCAM_GENICAM_CLPROTOCOL', '/opt/MVS/lib/CLProtocol'), ('HOMEBREW_CELLAR', '/home/linuxbrew/.linuxbrew/Cellar'), ('LC_ADDRESS', 'en_US.UTF-8'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', 'localhost:10.0'), ('LANG', 'en_US.UTF-8'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('CONDA_PYTHON_EXE', '/home/sd-robot/anaconda3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('SHLIB_PATH', ':/opt/MonitorSoftware/lib'), ('GST_PLUGIN_PATH', '/usr/local/lib:/usr/lib/x86_64-linux-gnu/gstreamer-1.0'), ('HOMEBREW_API_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/api'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('PWD', '/home/sd-robot/hql_test/hit_Qt/build/hit_menu'), ('HOMEBREW_BOTTLE_DOMAIN', 'https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles/'), ('LC_ALL', 'en_US.UTF-8'), ('CONDA_EXE', '/home/sd-robot/anaconda3/bin/conda'), ('SSH_CONNECTION', '192.168.1.35 49953 192.168.1.117 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/sd-robot/Radar_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Radar_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces/local/lib/python3.10/dist-packages:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('HOMEBREW_REPOSITORY', '/home/linuxbrew/.linuxbrew/Homebrew'), ('LC_NUMERIC', 'en_US.UTF-8'), ('TZ', 'Asia/Shanghai'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('MANPATH', '/home/linuxbrew/.linuxbrew/share/man:/home/linuxbrew/.linuxbrew/Homebrew/share/man::'), ('CMAKE_PREFIX_PATH', '/home/sd-robot/hql_test/hit_Qt/install/hit_menu:/home/sd-robot/Radar_ws/install/runes:/home/sd-robot/Radar_ws/install/hugin_gtkgui:/home/sd-robot/Radar_ws/install/hugin:/home/sd-robot/Radar_ws/install/raf_interfaces:/home/sd-robot/Radar_ws/install/oden:/home/sd-robot/Radar_ws/install/hugin_detect_pkg:/home/sd-robot/Radar_ws/install/oden_interfaces:/home/sd-robot/Radar_ws/install/liboden:/home/sd-robot/Radar_ws/install/arbe_raf:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/runes:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/raf_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/hugin_detect_pkg:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/oden_interfaces:/home/sd-robot/Hugin_ws_yhw/ros2_ws/install/liboden:/opt/ros/humble'), ('MVCAM_COMMON_RUNENV', '/opt/MVS/lib')]), 'shell': False}
+[10.369008] (hit_menu) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[10.369119] (hit_menu) StdoutLine: {'line': b'-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/lib/hit_menu/hit_menu\n'}
+[10.370707] (hit_menu) StdoutLine: {'line': b'-- Set runtime path of "/home/sd-robot/hql_test/hit_Qt/install/hit_menu/lib/hit_menu/hit_menu" to ""\n'}
+[10.370793] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src/\n'}
+[10.370855] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//hitRosThread.cpp\n'}
+[10.370963] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//style.css\n'}
+[10.371020] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysLogWidegt.cpp\n'}
+[10.371073] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysSettingWidget.cpp\n'}
+[10.371132] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//mainWidget.cpp\n'}
+[10.371184] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysSettingWidget.h\n'}
+[10.371236] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//point_cloud_subscriber.h\n'}
+[10.371290] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//hitRosThread.h\n'}
+[10.371463] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//point_cloud_subscriber.cpp\n'}
+[10.371630] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//resizableitem.h\n'}
+[10.371771] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//main.cpp\n'}
+[10.371919] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//lidarWidget.cpp\n'}
+[10.372001] (hit_menu) StdoutLine: {'line': b'-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//cameraWidget.cpp\n'}
+[10.372207] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//sysLogWidegt.h\n'}
+[10.372421] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//mainWidget.h\n'}
+[10.372505] (hit_menu) StdoutLine: {'line': b'-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//cameraWidget.h\n'}
+[10.372618] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//lidarWidget.h\n'}
+[10.372701] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/src//resizableitem.cpp\n'}
+[10.372886] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/package_run_dependencies/hit_menu\n'}
+[10.372975] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/parent_prefix_path/hit_menu\n'}
+[10.373066] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/ament_prefix_path.sh\n'}
+[10.373147] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/ament_prefix_path.dsv\n'}
+[10.373316] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/path.sh\n'}
+[10.373398] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/environment/path.dsv\n'}
+[10.373602] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.bash\n'}
+[10.373907] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.sh\n'}
+[10.373992] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.zsh\n'}
+[10.374118] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/local_setup.dsv\n'}
+[10.374220] (hit_menu) StdoutLine: {'line': b'-- Installing: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/package.dsv\n'}
+[10.374299] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/ament_index/resource_index/packages/hit_menu\n'}
+[10.374361] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/cmake/hit_menuConfig.cmake\n'}
+[10.374426] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/cmake/hit_menuConfig-version.cmake\n'}
+[10.374500] (hit_menu) StdoutLine: {'line': b'-- Up-to-date: /home/sd-robot/hql_test/hit_Qt/install/hit_menu/share/hit_menu/package.xml\n'}
+[10.374571] (hit_menu) CommandEnded: {'returncode': 0}
+[10.399377] (hit_menu) JobEnded: {'identifier': 'hit_menu', 'rc': 0}
+[10.399658] (-) EventReactorShutdown: {}

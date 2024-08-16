@@ -1,0 +1,38 @@
+#ifndef POINTCLOUDWIDGET_H
+#define POINTCLOUDWIDGET_H
+
+#include <QWidget>
+#include <QUdpSocket>
+#include <vtkSmartPointer.h>
+#include <vtkGenericOpenGLRenderWindow.h>
+#include <vtkRenderer.h>
+#include <vtkPolyData.h>
+#include <vtkActor.h>
+#include <vtkPolyDataMapper.h>
+#include <QVTKOpenGLNativeWidget.h>
+
+class PointCloudWidget : public QWidget
+{
+    Q_OBJECT
+
+public:
+    explicit PointCloudWidget(QWidget *parent = nullptr);
+    ~PointCloudWidget();
+
+private slots:
+    void processPendingDatagrams();
+
+private:
+    void initializeVTK();
+    void updatePointCloud(vtkSmartPointer<vtkPolyData> polyData);
+
+    QVTKOpenGLNativeWidget *vtkWidget;
+    QUdpSocket *udpSocket;
+    vtkSmartPointer<vtkGenericOpenGLRenderWindow> renderWindow;
+    vtkSmartPointer<vtkRenderer> renderer;
+    vtkSmartPointer<vtkPolyData> pointCloudData;
+    vtkSmartPointer<vtkActor> pointCloudActor;
+    vtkSmartPointer<vtkPolyDataMapper> pointCloudMapper;
+};
+
+#endif // POINTCLOUDWIDGET_H
