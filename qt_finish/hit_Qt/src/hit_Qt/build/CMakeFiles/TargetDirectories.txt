@@ -1,0 +1,4 @@
+/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/build/CMakeFiles/hit_menu.dir
+/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/build/CMakeFiles/edit_cache.dir
+/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/build/CMakeFiles/rebuild_cache.dir
+/home/sd-robot/hql_test/hit_Qt/src/hit_Qt/build/CMakeFiles/hit_menu_autogen.dir

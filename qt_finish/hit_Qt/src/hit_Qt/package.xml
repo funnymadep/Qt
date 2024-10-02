@@ -9,17 +9,21 @@
   <maintainer email="your_email@example.com">Your Name</maintainer>
   <license>Apache-2.0</license>
 
+  <depend>yolov8_msgs</depend>
+
   <buildtool_depend>ament_cmake</buildtool_depend>
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
 
   <build_depend>rclcpp</build_depend>
   <build_depend>sensor_msgs</build_depend>
+  <build_depend>visualization_msgs</build_depend>
   <build_depend>PCL</build_depend>
   <build_depend>VTK</build_depend>
   <build_depend>qtbase5-dev</build_depend>
 
   <exec_depend>rclcpp</exec_depend>
   <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>visualization_msgs</exec_depend>
   <exec_depend>PCL</exec_depend>
   <exec_depend>VTK</exec_depend>
   <exec_depend>qtbase5-dev</exec_depend>

@@ -1,0 +1,62 @@
+/* QWidget背景 */
+QWidget {
+    background-color: #eae7e7; /* 浅灰色背景 */
+    font-family: "Segoe UI", sans-serif;
+    font-size: 14px;
+}
+
+/* QPushButton 样式 */
+QPushButton {
+    background-color: #d2edf0; /* 绿色背景 */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+QPushButton:hover {
+    background-color: #ffffff; /* 鼠标悬停时稍微变深的绿色 */
+}
+
+QPushButton:pressed {
+    background-color: #019fde; /* 按下时更深的绿色 */
+}
+
+/* QComboBox 样式 */
+QComboBox {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    color: #333333;
+}
+
+QComboBox::drop-down {
+    border: none;
+}
+
+/* QComboBox::down-arrow {
+    image: url(/path/to/arrow-icon.png); 
+} 
+*/ 
+
+/* QTableWidget 和 QTreeWidget 样式 */
+QTableWidget, QTreeWidget {
+    border: 1px solid #dddcdc;
+    gridline-color: #e0e0e0;
+    background-color: #ffffff;
+    alternate-background-color: #f9f9f9; /* 交替行背景色 */
+}
+
+QHeaderView::section {
+    background-color: #c2f9f9;
+    color: rgb(50, 51, 49);
+    padding: 5px;
+    border: none;
+}
+
+QTableWidget::item:selected, QTreeWidget::item:selected {
+    background-color: #019fde; /* 选中时的背景色 */
+    color: #ffffff;
+}

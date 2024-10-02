@@ -5,6 +5,8 @@
 #include "lidarWidget.h"
 #include "sysLogWidegt.h"
 #include "sysSettingWidget.h"
+#include "recordWidget.h"
+#include "recordCamera.h"
 
 #include <QVBoxLayout>
 #include <QTreeWidget>
@@ -27,7 +29,9 @@ public:
     void createMainPage(QHBoxLayout *h);
 
 private slots:
-    void handleItemClicked(QTreeWidgetItem *item);
+    void handleItemClicked(QTreeWidgetItem *current, QTreeWidgetItem *previous);
+signals:
+    void emitCameraSignal();
 
 private:
     QVBoxLayout *mlayout = nullptr;
@@ -38,6 +42,8 @@ private:
     cameraWidget *camera = nullptr;
     sysLogWidget *syslog = nullptr;
     sysSettingWidget *sysSetting = nullptr;
+    recordWidget *recordCloud = nullptr;
+    recordCameraWidget *recordCamera = nullptr;
     
 };
 #endif // WIDGET_H

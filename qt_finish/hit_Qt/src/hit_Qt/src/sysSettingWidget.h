@@ -21,6 +21,7 @@ public:
     void systemReboot();
 private slots:
     void SettingButtonGroupClicked(int id);
+    void updateStatus();
 private:
     QLabel *mCpuTemperature     = nullptr;                  // cpu温度
     QLabel *mGpuTemperature     = nullptr;                  // gpu温度

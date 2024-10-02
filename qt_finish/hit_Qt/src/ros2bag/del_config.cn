@@ -1,0 +1,11 @@
+[Settings]
+dstDir = /home/sd-robot/hql_test/hit_Qt/src/ros2bag
+low_disk_space_threshold = 500            
+delete_interval = 1                      
+delete_cutoff_days = 1                     
+
+
+# dstDir bag包路径
+# low_disk_space_threshold 磁盘剩余容量 单位mb
+# delete_interval bag包间隔 单位分钟
+# delete_cutoff_days bag包删除间隔 单位day

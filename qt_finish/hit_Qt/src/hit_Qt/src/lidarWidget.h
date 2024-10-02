@@ -14,50 +14,19 @@
 #include <vtkRenderWindowInteractor.h>
 #include <QVTKOpenGLNativeWidget.h>
 #include <vtkGenericOpenGLRenderWindow.h>
-
-#include <pcl/point_types.h>
-#include <pcl/point_cloud.h>
+#include <visualization_msgs/msg/marker.hpp>
 #include <pcl/visualization/pcl_visualizer.h>
-
-#include "point_cloud_subscriber.h"
+// #include <pcl/octree/impl/octree_base.hpp>
+// #include <pcl/octree/impl/octree_pointcloud.hpp>
+#include <pcl/common/io.h>
+// #include "point_cloud_subscriber.h"
+#include <deque>
+#include <vector>
+#include "global.h"
+#include "rosRunnable.h"
+#include "rosNode.h"
 
 using PointCloud = pcl::PointCloud<pcl::PointXYZ>;
-
-
-
-
-class Server : public QTcpServer {
-    Q_OBJECT
-
-public:
-    Server() {
-        if (!this->listen(QHostAddress::Any, 2222)) {
-            qCritical() << "Unable to start the server: " << this->errorString();
-        } else {
-            qDebug() << "Server started...";
-        }
-    }
-
-signals:
-    void cloudReceived(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
-
-protected:
-    void incomingConnection(qintptr socketDescriptor) override {
-        QTcpSocket* socket = new QTcpSocket(this);
-        socket->setSocketDescriptor(socketDescriptor);
-        connect(socket, &QTcpSocket::readyRead, this, [this, socket]() {
-            QByteArray data = socket->readAll();
-            std::stringstream compressedData(data.toStdString());
-            pcl::PointCloud<pcl::PointXYZ>::Ptr cloud(new pcl::PointCloud<pcl::PointXYZ>);
-            pcl::io::OctreePointCloudCompression<pcl::PointXYZ> octreeDecompression;
-            octreeDecompression.decodePointCloud(compressedData, cloud);
-            emit cloudReceived(cloud);
-        });
-        connect(socket, &QTcpSocket::disconnected, socket, &QTcpSocket::deleteLater);
-    }
-};
-
-
 
 class lidarWidget : public QWidget
 {
@@ -69,16 +38,19 @@ public:
 
     void createStatus(QVBoxLayout *vLeft);
     void createCloudPoint(QVBoxLayout *vLeft);
-    void createSetting(QHBoxLayout *hlayout);
+    void createSetting(QVBoxLayout *vleft);
     void initializeViewer();
 
 private slots:
-    void handlePointCloudReceived(pcl::PointCloud<pcl::PointXYZ>::Ptr cloud);
+    void handlePointCloudReceived();
     void combChange(const QString &context);
     void addCube();
     void delCube();
     // void connectToServer();
-    
+
+signals:
+    void emitLidarMsg();
+
 private:
     QLabel *mLabelStatus = nullptr;
     QLabel *mLabelIsHide = nullptr;
@@ -90,11 +62,22 @@ private:
     QLineEdit *lateralDistanceEdit = nullptr;
     QLineEdit *longitudinalDistanceEdit = nullptr;
     QTimer *timer;
-    Server *server;
+    // Server *server;
     QVTKOpenGLNativeWidget *vtkWidget;
     vtkSmartPointer<vtkRenderer> renderer;
     vtkSmartPointer<vtkGenericOpenGLRenderWindow> renderWindow;
     pcl::visualization::PCLVisualizer::Ptr viewer;
+
+    // PointThread *thread;
+    lidarRunnable *lidarThread;
+    std::thread lidar_thread_;
+
+    std::deque<pcl::PointCloud<pcl::PointXYZI>::Ptr> cloudQueue; // 用来保存最近的5次点云数据
+    std::deque<std::string> idsQueue;
+    long id = 0;
+    const int maxCloudCount = 10; // 叠加点云的最大数量
+    std::vector<std::string> cubeIds;  // 记录所有的 cube_ 标记 ID
+    std::vector<std::string> textIds;  // 记录所有的 text_ 标记 ID
 };
 
 

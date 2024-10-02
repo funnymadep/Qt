@@ -15,10 +15,14 @@ aux_source_directory(./src SRC_LIST)
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 find_package(Qt5 COMPONENTS Core Widgets Gui Network Multimedia MultimediaWidgets REQUIRED)
-find_package(PCL COMPONENTS io common compression visualization REQUIRED)
+find_package(PCL  COMPONENTS io common compression octree visualization REQUIRED)
 find_package(VTK REQUIRED)
 find_package(pcl_conversions REQUIRED)
+find_package(OpenCV REQUIRED)
+find_package(cv_bridge REQUIRED)
+find_package(yolov8_msgs REQUIRED)
 # find_library(jawt HINTS ${JAVA_HOME}/lib ${JAVA_HOME}/lib/server)
 # if (NOT JAWT_LIBRARY)
 #     message(${JAVA_HOME})
@@ -42,13 +46,16 @@ include_directories(include ${PCL_INCLUDE_DIRS} )
 add_executable(${PROJECT_NAME}  ${SRC_LIST} resources.qrc)
 
 target_link_libraries(${PROJECT_NAME} Qt5::Core Qt5::Gui Qt5::Widgets Qt5::Network Qt5::Multimedia Qt5::MultimediaWidgets)
-target_link_libraries(${PROJECT_NAME} ${PCL_LIBRARIES} ${VTK_LIBRARIES} ${pcl_conversions_LIBRARIES} ${JAVA})
+target_link_libraries(${PROJECT_NAME} ${PCL_LIBRARIES} ${VTK_LIBRARIES} ${pcl_conversions_LIBRARIES} ${OpenCV_LIBS})
 
 ament_target_dependencies(${PROJECT_NAME}
   rclcpp
   sensor_msgs
+  visualization_msgs
   PCL
   pcl_conversions
+  cv_bridge
+  yolov8_msgs
 )
 
 # Install executable
